@@ -1,0 +1,31 @@
+.container {
+  position: absolute;
+}
+
+.buttonPrevContainer {
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.buttonPrev {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  color: rgba(255,255,255,0.9);
+  margin: 0px 20px 0px 0px;
+  line-height: 200px;
+}
+
+.buttonNextContainer {
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.buttonNext {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  color: rgba(255,255,255,0.9);
+  margin: 0px 0px 0px 20px;
+  line-height: 200px;
+}

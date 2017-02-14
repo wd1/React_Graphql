@@ -1,0 +1,6 @@
+{
+  "name": "CreditCard",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CreditCard.js"
+}

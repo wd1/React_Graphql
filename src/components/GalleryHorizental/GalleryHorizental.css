@@ -1,0 +1,24 @@
+@import '../../../node_modules/normalize.css/normalize.css';
+@import '../variables.css';
+
+.item {
+  padding: 0;
+  display: inline;
+  height: 200px;
+  width: 300px;
+}
+
+.lastItem {
+  padding-left: 50px;
+  width: 300px;
+}
+
+.lastItem a {
+  line-height: 100px;
+  color: #00d9ff;
+}
+
+.container {
+  background-color: #2e2e2e;
+  height: 200px;
+}

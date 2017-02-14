@@ -1,0 +1,39 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../../components/variables.css';
+.bigGraph {
+  position: relative;
+  width: 100%;
+}
+
+.bigGraphImg {
+  width: 100%;
+}
+
+.bigGraphOverlay {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: white;
+  max-width: 650px;
+  float: right;
+  padding: 30px 50px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bigGraphOverlay a{
+  color: #00d9ff;
+}
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  text-align: center;
+}

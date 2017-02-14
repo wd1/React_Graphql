@@ -1,0 +1,4872 @@
+{
+    "null": {
+        "null": {
+            "ia": 3543,
+            "total": 803769
+        },
+        "alameda": {
+            "ia": 461,
+            "total": 91063
+        },
+        "alpine": {
+            "ia": 0,
+            "total": 57
+        },
+        "amador": {
+            "ia": 2,
+            "total": 1908
+        },
+        "butte": {
+            "ia": 35,
+            "total": 20379
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 1496
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 1955
+        },
+        "contra-costa": {
+            "ia": 526,
+            "total": 78348
+        },
+        "del-norte": {
+            "ia": 1,
+            "total": 1920
+        },
+        "el-dorado": {
+            "ia": 12,
+            "total": 11144
+        },
+        "fresno": {
+            "ia": 126,
+            "total": 42195
+        },
+        "glenn": {
+            "ia": 0,
+            "total": 1878
+        },
+        "humboldt": {
+            "ia": 16,
+            "total": 14159
+        },
+        "imperial": {
+            "ia": 24,
+            "total": 15841
+        },
+        "inyo": {
+            "ia": 10,
+            "total": 3167
+        },
+        "kern": {
+            "ia": 162,
+            "total": 56119
+        },
+        "kings": {
+            "ia": 6,
+            "total": 6600
+        },
+        "lake": {
+            "ia": 8,
+            "total": 9118
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 2717
+        },
+        "los-angeles": {
+            "ia": 6760,
+            "total": 699584
+        },
+        "madera": {
+            "ia": 5,
+            "total": 8086
+        },
+        "marin": {
+            "ia": 181,
+            "total": 24311
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 2348
+        },
+        "mendocino": {
+            "ia": 9,
+            "total": 8795
+        },
+        "merced": {
+            "ia": 19,
+            "total": 18839
+        },
+        "modoc": {
+            "ia": 0,
+            "total": 163
+        },
+        "mono": {
+            "ia": 0,
+            "total": 2355
+        },
+        "monterey": {
+            "ia": 209,
+            "total": 47581
+        },
+        "napa": {
+            "ia": 21,
+            "total": 14865
+        },
+        "nevada": {
+            "ia": 9,
+            "total": 6900
+        },
+        "orange": {
+            "ia": 1315,
+            "total": 165277
+        },
+        "placer": {
+            "ia": 44,
+            "total": 24263
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 2898
+        },
+        "riverside": {
+            "ia": 383,
+            "total": 130725
+        },
+        "sacramento": {
+            "ia": 221,
+            "total": 85201
+        },
+        "san-benito": {
+            "ia": 20,
+            "total": 6455
+        },
+        "san-bernardino": {
+            "ia": 435,
+            "total": 133182
+        },
+        "san-diego": {
+            "ia": 1055,
+            "total": 179454
+        },
+        "san-francisco": {
+            "ia": 440,
+            "total": 121687
+        },
+        "san-joaquin": {
+            "ia": 157,
+            "total": 46734
+        },
+        "san-luis-obispo": {
+            "ia": 250,
+            "total": 38064
+        },
+        "san-mateo": {
+            "ia": 323,
+            "total": 61631
+        },
+        "santa-barbara": {
+            "ia": 1417,
+            "total": 229181
+        },
+        "santa-clara": {
+            "ia": 1020,
+            "total": 134073
+        },
+        "santa-cruz": {
+            "ia": 22,
+            "total": 19359
+        },
+        "shasta": {
+            "ia": 17,
+            "total": 15946
+        },
+        "sierra": {
+            "ia": 43,
+            "total": 7059
+        },
+        "siskiyou": {
+            "ia": 4,
+            "total": 3403
+        },
+        "solano": {
+            "ia": 85,
+            "total": 28846
+        },
+        "sonoma": {
+            "ia": 102,
+            "total": 42461
+        },
+        "stanislaus": {
+            "ia": 85,
+            "total": 30693
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 4715
+        },
+        "tehama": {
+            "ia": 34,
+            "total": 13810
+        },
+        "trinity": {
+            "ia": 0,
+            "total": 37
+        },
+        "tulare": {
+            "ia": 43,
+            "total": 25905
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 2800
+        },
+        "ventura": {
+            "ia": 243,
+            "total": 62500
+        },
+        "yolo": {
+            "ia": 56,
+            "total": 12931
+        },
+        "yuba": {
+            "ia": 17,
+            "total": 7573
+        }
+    },
+    "academia.academia": {
+        "null": {
+            "ia": 3672,
+            "total": 555886
+        }
+    },
+    "academia.administration": {
+        "null": {
+            "ia": 680,
+            "total": 178737
+        }
+    },
+    "academia.custodian": {
+        "null": {
+            "ia": 41,
+            "total": 22965
+        }
+    },
+    "academia.faculty": {
+        "null": {
+            "ia": 2106,
+            "total": 145827
+        },
+        "butte": {
+            "ia": 0,
+            "total": 1
+        },
+        "contra-costa": {
+            "ia": 9,
+            "total": 1520
+        },
+        "kern": {
+            "ia": 4,
+            "total": 1141
+        },
+        "lake": {
+            "ia": 1,
+            "total": 757
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 134
+        },
+        "los-angeles": {
+            "ia": 157,
+            "total": 10486
+        },
+        "marin": {
+            "ia": 16,
+            "total": 1437
+        },
+        "mendocino": {
+            "ia": 2,
+            "total": 671
+        },
+        "merced": {
+            "ia": 2,
+            "total": 410
+        },
+        "monterey": {
+            "ia": 20,
+            "total": 2042
+        },
+        "orange": {
+            "ia": 90,
+            "total": 4716
+        },
+        "riverside": {
+            "ia": 22,
+            "total": 3704
+        },
+        "san-bernardino": {
+            "ia": 8,
+            "total": 785
+        },
+        "san-diego": {
+            "ia": 25,
+            "total": 2200
+        },
+        "san-francisco": {
+            "ia": 52,
+            "total": 7231
+        },
+        "san-mateo": {
+            "ia": 16,
+            "total": 716
+        },
+        "santa-barbara": {
+            "ia": 159,
+            "total": 16713
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 45
+        },
+        "sierra": {
+            "ia": 17,
+            "total": 6757
+        },
+        "solano": {
+            "ia": 1,
+            "total": 17
+        },
+        "sonoma": {
+            "ia": 33,
+            "total": 5628
+        },
+        "yuba": {
+            "ia": 6,
+            "total": 278
+        }
+    },
+    "academia.lecturer": {
+        "null": {
+            "ia": 1845,
+            "total": 111770
+        }
+    },
+    "academia.nurse": {
+        "null": {
+            "ia": 378,
+            "total": 59570
+        }
+    },
+    "academia.researcher": {
+        "null": {
+            "ia": 226,
+            "total": 18716
+        }
+    },
+    "academia.student.postdoc": {
+        "null": {
+            "ia": 479,
+            "total": 29392
+        }
+    },
+    "academia.student.reader": {
+        "null": {
+            "ia": 5,
+            "total": 11943
+        }
+    },
+    "academia.student.researcher": {
+        "null": {
+            "ia": 0,
+            "total": 36666
+        }
+    },
+    "academia.student.student": {
+        "null": {
+            "ia": 94,
+            "total": 181479
+        }
+    },
+    "academia.student.teaching-assistant": {
+        "null": {
+            "ia": 0,
+            "total": 50524
+        }
+    },
+    "fire-department": {
+        "null": {
+            "ia": 27,
+            "total": 34060
+        },
+        "alameda": {
+            "ia": 16,
+            "total": 5513
+        },
+        "alpine": {
+            "ia": 0,
+            "total": 26
+        },
+        "amador": {
+            "ia": 0,
+            "total": 44
+        },
+        "butte": {
+            "ia": 5,
+            "total": 716
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 64
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 113
+        },
+        "contra-costa": {
+            "ia": 3,
+            "total": 2989
+        },
+        "del-norte": {
+            "ia": 0,
+            "total": 85
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 80
+        },
+        "fresno": {
+            "ia": 9,
+            "total": 2169
+        },
+        "glenn": {
+            "ia": 0,
+            "total": 34
+        },
+        "humboldt": {
+            "ia": 0,
+            "total": 258
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 1058
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 8
+        },
+        "kern": {
+            "ia": 2,
+            "total": 4819
+        },
+        "kings": {
+            "ia": 0,
+            "total": 356
+        },
+        "lake": {
+            "ia": 0,
+            "total": 559
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 27
+        },
+        "los-angeles": {
+            "ia": 109,
+            "total": 42640
+        },
+        "madera": {
+            "ia": 0,
+            "total": 149
+        },
+        "marin": {
+            "ia": 2,
+            "total": 1891
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 38
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 138
+        },
+        "merced": {
+            "ia": 7,
+            "total": 1062
+        },
+        "modoc": {
+            "ia": 0,
+            "total": 7
+        },
+        "mono": {
+            "ia": 0,
+            "total": 258
+        },
+        "monterey": {
+            "ia": 0,
+            "total": 1609
+        },
+        "napa": {
+            "ia": 0,
+            "total": 795
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 325
+        },
+        "orange": {
+            "ia": 11,
+            "total": 9463
+        },
+        "placer": {
+            "ia": 0,
+            "total": 1071
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 6
+        },
+        "riverside": {
+            "ia": 7,
+            "total": 3170
+        },
+        "sacramento": {
+            "ia": 12,
+            "total": 4821
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 189
+        },
+        "san-bernardino": {
+            "ia": 5,
+            "total": 6513
+        },
+        "san-diego": {
+            "ia": 11,
+            "total": 9794
+        },
+        "san-francisco": {
+            "ia": 5,
+            "total": 7853
+        },
+        "san-joaquin": {
+            "ia": 1,
+            "total": 1889
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 894
+        },
+        "san-mateo": {
+            "ia": 0,
+            "total": 1852
+        },
+        "santa-barbara": {
+            "ia": 12,
+            "total": 3696
+        },
+        "santa-clara": {
+            "ia": 6,
+            "total": 5633
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 662
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 521
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 590
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 293
+        },
+        "solano": {
+            "ia": 4,
+            "total": 1440
+        },
+        "sonoma": {
+            "ia": 0,
+            "total": 1539
+        },
+        "stanislaus": {
+            "ia": 1,
+            "total": 1518
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 93
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 87
+        },
+        "tulare": {
+            "ia": 5,
+            "total": 1361
+        },
+        "tuolumne": {
+            "ia": 1,
+            "total": 229
+        },
+        "ventura": {
+            "ia": 9,
+            "total": 3512
+        },
+        "yolo": {
+            "ia": 0,
+            "total": 582
+        },
+        "yuba": {
+            "ia": 5,
+            "total": 340
+        }
+    },
+    "health.nurse": {
+        "null": {
+            "ia": 45,
+            "total": 35196
+        },
+        "alameda": {
+            "ia": 6,
+            "total": 826
+        },
+        "amador": {
+            "ia": 0,
+            "total": 19
+        },
+        "butte": {
+            "ia": 0,
+            "total": 257
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 14
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 30
+        },
+        "contra-costa": {
+            "ia": 26,
+            "total": 6428
+        },
+        "del-norte": {
+            "ia": 0,
+            "total": 12
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 131
+        },
+        "fresno": {
+            "ia": 5,
+            "total": 1171
+        },
+        "glenn": {
+            "ia": 0,
+            "total": 11
+        },
+        "humboldt": {
+            "ia": 5,
+            "total": 541
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 119
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 267
+        },
+        "kern": {
+            "ia": 21,
+            "total": 4064
+        },
+        "kings": {
+            "ia": 0,
+            "total": 124
+        },
+        "lake": {
+            "ia": 0,
+            "total": 19
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 17
+        },
+        "los-angeles": {
+            "ia": 197,
+            "total": 33974
+        },
+        "madera": {
+            "ia": 0,
+            "total": 92
+        },
+        "marin": {
+            "ia": 1,
+            "total": 400
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 70
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 110
+        },
+        "merced": {
+            "ia": 0,
+            "total": 215
+        },
+        "mono": {
+            "ia": 0,
+            "total": 254
+        },
+        "monterey": {
+            "ia": 17,
+            "total": 5166
+        },
+        "napa": {
+            "ia": 0,
+            "total": 101
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 81
+        },
+        "orange": {
+            "ia": 16,
+            "total": 2175
+        },
+        "placer": {
+            "ia": 0,
+            "total": 290
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 38
+        },
+        "riverside": {
+            "ia": 15,
+            "total": 8910
+        },
+        "sacramento": {
+            "ia": 8,
+            "total": 1844
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 520
+        },
+        "san-bernardino": {
+            "ia": 38,
+            "total": 8976
+        },
+        "san-diego": {
+            "ia": 17,
+            "total": 2875
+        },
+        "san-francisco": {
+            "ia": 45,
+            "total": 16871
+        },
+        "san-joaquin": {
+            "ia": 21,
+            "total": 3376
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 329
+        },
+        "san-mateo": {
+            "ia": 6,
+            "total": 2755
+        },
+        "santa-barbara": {
+            "ia": 0,
+            "total": 1386
+        },
+        "santa-clara": {
+            "ia": 70,
+            "total": 12055
+        },
+        "santa-cruz": {
+            "ia": 2,
+            "total": 392
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 224
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 295
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 74
+        },
+        "solano": {
+            "ia": 0,
+            "total": 334
+        },
+        "sonoma": {
+            "ia": 4,
+            "total": 843
+        },
+        "stanislaus": {
+            "ia": 1,
+            "total": 846
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 205
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 478
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 940
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 34
+        },
+        "ventura": {
+            "ia": 14,
+            "total": 3732
+        },
+        "yolo": {
+            "ia": 0,
+            "total": 100
+        },
+        "yuba": {
+            "ia": 0,
+            "total": 67
+        }
+    },
+    "law-and-enforcement.attorney": {
+        "null": {
+            "ia": 103,
+            "total": 15741
+        },
+        "alameda": {
+            "ia": 0,
+            "total": 1089
+        },
+        "amador": {
+            "ia": 0,
+            "total": 57
+        },
+        "butte": {
+            "ia": 0,
+            "total": 198
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 29
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 10
+        },
+        "contra-costa": {
+            "ia": 0,
+            "total": 646
+        },
+        "del-norte": {
+            "ia": 0,
+            "total": 5
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 248
+        },
+        "fresno": {
+            "ia": 11,
+            "total": 1131
+        },
+        "glenn": {
+            "ia": 0,
+            "total": 6
+        },
+        "humboldt": {
+            "ia": 0,
+            "total": 155
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 151
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 19
+        },
+        "kern": {
+            "ia": 2,
+            "total": 693
+        },
+        "kings": {
+            "ia": 0,
+            "total": 111
+        },
+        "lake": {
+            "ia": 0,
+            "total": 30
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 15
+        },
+        "los-angeles": {
+            "ia": 108,
+            "total": 9428
+        },
+        "madera": {
+            "ia": 1,
+            "total": 124
+        },
+        "marin": {
+            "ia": 0,
+            "total": 294
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 38
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 47
+        },
+        "merced": {
+            "ia": 0,
+            "total": 210
+        },
+        "mono": {
+            "ia": 0,
+            "total": 17
+        },
+        "monterey": {
+            "ia": 0,
+            "total": 557
+        },
+        "napa": {
+            "ia": 0,
+            "total": 282
+        },
+        "nevada": {
+            "ia": 1,
+            "total": 158
+        },
+        "orange": {
+            "ia": 32,
+            "total": 4248
+        },
+        "placer": {
+            "ia": 0,
+            "total": 339
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 12
+        },
+        "riverside": {
+            "ia": 22,
+            "total": 1736
+        },
+        "sacramento": {
+            "ia": 2,
+            "total": 1875
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 31
+        },
+        "san-bernardino": {
+            "ia": 16,
+            "total": 1373
+        },
+        "san-diego": {
+            "ia": 18,
+            "total": 2614
+        },
+        "san-francisco": {
+            "ia": 25,
+            "total": 2265
+        },
+        "san-joaquin": {
+            "ia": 1,
+            "total": 463
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 152
+        },
+        "san-mateo": {
+            "ia": 5,
+            "total": 241
+        },
+        "santa-barbara": {
+            "ia": 0,
+            "total": 78
+        },
+        "santa-clara": {
+            "ia": 15,
+            "total": 2197
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 145
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 178
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 10
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 72
+        },
+        "solano": {
+            "ia": 1,
+            "total": 424
+        },
+        "sonoma": {
+            "ia": 1,
+            "total": 412
+        },
+        "stanislaus": {
+            "ia": 5,
+            "total": 386
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 28
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 100
+        },
+        "tulare": {
+            "ia": 17,
+            "total": 758
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 41
+        },
+        "ventura": {
+            "ia": 8,
+            "total": 1212
+        },
+        "yolo": {
+            "ia": 1,
+            "total": 189
+        },
+        "yuba": {
+            "ia": 0,
+            "total": 69
+        }
+    },
+    "law-and-enforcement.correctional": {
+        "null": {
+            "ia": 385,
+            "total": 222275
+        }
+    },
+    "law-and-enforcement.paralegal": {
+        "null": {
+            "ia": 0,
+            "total": 100
+        },
+        "alameda": {
+            "ia": 0,
+            "total": 66
+        },
+        "amador": {
+            "ia": 0,
+            "total": 4
+        },
+        "butte": {
+            "ia": 0,
+            "total": 27
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 10
+        },
+        "contra-costa": {
+            "ia": 3,
+            "total": 43
+        },
+        "del-norte": {
+            "ia": 0,
+            "total": 4
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 11
+        },
+        "fresno": {
+            "ia": 0,
+            "total": 43
+        },
+        "glenn": {
+            "ia": 0,
+            "total": 1
+        },
+        "humboldt": {
+            "ia": 0,
+            "total": 4
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 2
+        },
+        "kern": {
+            "ia": 0,
+            "total": 136
+        },
+        "kings": {
+            "ia": 0,
+            "total": 4
+        },
+        "lake": {
+            "ia": 0,
+            "total": 1
+        },
+        "los-angeles": {
+            "ia": 8,
+            "total": 1118
+        },
+        "madera": {
+            "ia": 0,
+            "total": 5
+        },
+        "merced": {
+            "ia": 0,
+            "total": 15
+        },
+        "monterey": {
+            "ia": 0,
+            "total": 2
+        },
+        "napa": {
+            "ia": 0,
+            "total": 16
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 4
+        },
+        "orange": {
+            "ia": 0,
+            "total": 428
+        },
+        "placer": {
+            "ia": 0,
+            "total": 15
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 7
+        },
+        "riverside": {
+            "ia": 0,
+            "total": 263
+        },
+        "sacramento": {
+            "ia": 0,
+            "total": 118
+        },
+        "san-bernardino": {
+            "ia": 0,
+            "total": 66
+        },
+        "san-diego": {
+            "ia": 0,
+            "total": 1051
+        },
+        "san-francisco": {
+            "ia": 0,
+            "total": 7
+        },
+        "san-joaquin": {
+            "ia": 0,
+            "total": 89
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 19
+        },
+        "san-mateo": {
+            "ia": 0,
+            "total": 32
+        },
+        "santa-barbara": {
+            "ia": 0,
+            "total": 150
+        },
+        "santa-clara": {
+            "ia": 6,
+            "total": 528
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 17
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 2
+        },
+        "solano": {
+            "ia": 0,
+            "total": 39
+        },
+        "sonoma": {
+            "ia": 0,
+            "total": 2
+        },
+        "stanislaus": {
+            "ia": 0,
+            "total": 61
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 107
+        },
+        "ventura": {
+            "ia": 0,
+            "total": 56
+        },
+        "yolo": {
+            "ia": 0,
+            "total": 3
+        },
+        "yuba": {
+            "ia": 0,
+            "total": 1
+        }
+    },
+    "law-and-enforcement.police.california-highway-patrol": {
+        "null": {
+            "ia": 54,
+            "total": 41939
+        }
+    },
+    "law-and-enforcement.police.detective": {
+        "del-norte": {
+            "ia": 0,
+            "total": 1
+        },
+        "fresno": {
+            "ia": 0,
+            "total": 1
+        },
+        "kern": {
+            "ia": 0,
+            "total": 1
+        },
+        "los-angeles": {
+            "ia": 17,
+            "total": 8252
+        },
+        "marin": {
+            "ia": 0,
+            "total": 6
+        },
+        "orange": {
+            "ia": 0,
+            "total": 1
+        },
+        "riverside": {
+            "ia": 3,
+            "total": 485
+        },
+        "san-bernardino": {
+            "ia": 0,
+            "total": 61
+        },
+        "san-diego": {
+            "ia": 0,
+            "total": 284
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 2
+        },
+        "san-mateo": {
+            "ia": 0,
+            "total": 4
+        },
+        "santa-barbara": {
+            "ia": 0,
+            "total": 4
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 2
+        },
+        "stanislaus": {
+            "ia": 0,
+            "total": 144
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 15
+        },
+        "ventura": {
+            "ia": 0,
+            "total": 15
+        }
+    },
+    "law-and-enforcement.police.officer": {
+        "null": {
+            "ia": 1,
+            "total": 2599
+        },
+        "alameda": {
+            "ia": 18,
+            "total": 7760
+        },
+        "amador": {
+            "ia": 0,
+            "total": 4
+        },
+        "butte": {
+            "ia": 0,
+            "total": 574
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 13
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 84
+        },
+        "contra-costa": {
+            "ia": 8,
+            "total": 3336
+        },
+        "del-norte": {
+            "ia": 0,
+            "total": 49
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 43
+        },
+        "fresno": {
+            "ia": 1,
+            "total": 3851
+        },
+        "glenn": {
+            "ia": 0,
+            "total": 62
+        },
+        "humboldt": {
+            "ia": 0,
+            "total": 400
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 266
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 39
+        },
+        "kern": {
+            "ia": 1,
+            "total": 1732
+        },
+        "kings": {
+            "ia": 0,
+            "total": 282
+        },
+        "lake": {
+            "ia": 0,
+            "total": 261
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 13
+        },
+        "los-angeles": {
+            "ia": 147,
+            "total": 51527
+        },
+        "madera": {
+            "ia": 0,
+            "total": 333
+        },
+        "marin": {
+            "ia": 0,
+            "total": 491
+        },
+        "mendocino": {
+            "ia": 2,
+            "total": 151
+        },
+        "merced": {
+            "ia": 0,
+            "total": 709
+        },
+        "monterey": {
+            "ia": 5,
+            "total": 1461
+        },
+        "napa": {
+            "ia": 0,
+            "total": 349
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 196
+        },
+        "orange": {
+            "ia": 20,
+            "total": 9422
+        },
+        "placer": {
+            "ia": 0,
+            "total": 901
+        },
+        "riverside": {
+            "ia": 0,
+            "total": 2060
+        },
+        "sacramento": {
+            "ia": 17,
+            "total": 4147
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 77
+        },
+        "san-bernardino": {
+            "ia": 3,
+            "total": 3038
+        },
+        "san-diego": {
+            "ia": 21,
+            "total": 12431
+        },
+        "san-francisco": {
+            "ia": 12,
+            "total": 8931
+        },
+        "san-joaquin": {
+            "ia": 10,
+            "total": 2240
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 489
+        },
+        "san-mateo": {
+            "ia": 2,
+            "total": 2360
+        },
+        "santa-barbara": {
+            "ia": 0,
+            "total": 1529
+        },
+        "santa-clara": {
+            "ia": 15,
+            "total": 6813
+        },
+        "santa-cruz": {
+            "ia": 5,
+            "total": 761
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 292
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 66
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 37
+        },
+        "solano": {
+            "ia": 0,
+            "total": 1425
+        },
+        "sonoma": {
+            "ia": 0,
+            "total": 1118
+        },
+        "stanislaus": {
+            "ia": 9,
+            "total": 1080
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 2
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 3
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 1116
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 62
+        },
+        "ventura": {
+            "ia": 0,
+            "total": 1622
+        },
+        "yolo": {
+            "ia": 0,
+            "total": 480
+        },
+        "yuba": {
+            "ia": 0,
+            "total": 281
+        }
+    },
+    "law-and-enforcement.police.sergeant": {
+        "null": {
+            "ia": 3,
+            "total": 5212
+        },
+        "alameda": {
+            "ia": 5,
+            "total": 2145
+        },
+        "amador": {
+            "ia": 0,
+            "total": 27
+        },
+        "butte": {
+            "ia": 0,
+            "total": 160
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 34
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 52
+        },
+        "contra-costa": {
+            "ia": 0,
+            "total": 1122
+        },
+        "del-norte": {
+            "ia": 0,
+            "total": 45
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 61
+        },
+        "fresno": {
+            "ia": 0,
+            "total": 790
+        },
+        "glenn": {
+            "ia": 0,
+            "total": 21
+        },
+        "humboldt": {
+            "ia": 0,
+            "total": 95
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 138
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 28
+        },
+        "kern": {
+            "ia": 0,
+            "total": 354
+        },
+        "kings": {
+            "ia": 0,
+            "total": 147
+        },
+        "lake": {
+            "ia": 0,
+            "total": 80
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 20
+        },
+        "los-angeles": {
+            "ia": 22,
+            "total": 16039
+        },
+        "madera": {
+            "ia": 0,
+            "total": 94
+        },
+        "marin": {
+            "ia": 1,
+            "total": 212
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 19
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 92
+        },
+        "merced": {
+            "ia": 0,
+            "total": 139
+        },
+        "modoc": {
+            "ia": 0,
+            "total": 4
+        },
+        "mono": {
+            "ia": 0,
+            "total": 31
+        },
+        "monterey": {
+            "ia": 0,
+            "total": 426
+        },
+        "napa": {
+            "ia": 0,
+            "total": 168
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 90
+        },
+        "orange": {
+            "ia": 6,
+            "total": 3214
+        },
+        "placer": {
+            "ia": 0,
+            "total": 188
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 20
+        },
+        "riverside": {
+            "ia": 2,
+            "total": 1148
+        },
+        "sacramento": {
+            "ia": 0,
+            "total": 653
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 46
+        },
+        "san-bernardino": {
+            "ia": 0,
+            "total": 799
+        },
+        "san-diego": {
+            "ia": 0,
+            "total": 1205
+        },
+        "san-francisco": {
+            "ia": 0,
+            "total": 2109
+        },
+        "san-joaquin": {
+            "ia": 0,
+            "total": 699
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 203
+        },
+        "san-mateo": {
+            "ia": 0,
+            "total": 573
+        },
+        "santa-barbara": {
+            "ia": 0,
+            "total": 370
+        },
+        "santa-clara": {
+            "ia": 10,
+            "total": 1353
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 191
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 186
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 24
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 36
+        },
+        "solano": {
+            "ia": 0,
+            "total": 404
+        },
+        "sonoma": {
+            "ia": 0,
+            "total": 349
+        },
+        "stanislaus": {
+            "ia": 0,
+            "total": 419
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 30
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 72
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 216
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 39
+        },
+        "ventura": {
+            "ia": 2,
+            "total": 311
+        },
+        "yolo": {
+            "ia": 0,
+            "total": 189
+        },
+        "yuba": {
+            "ia": 0,
+            "total": 55
+        }
+    },
+    "law-and-enforcement.police.sheriff": {
+        "alameda": {
+            "ia": 20,
+            "total": 5790
+        },
+        "amador": {
+            "ia": 0,
+            "total": 223
+        },
+        "butte": {
+            "ia": 0,
+            "total": 678
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 134
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 125
+        },
+        "contra-costa": {
+            "ia": 8,
+            "total": 3764
+        },
+        "del-norte": {
+            "ia": 0,
+            "total": 78
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 1207
+        },
+        "fresno": {
+            "ia": 5,
+            "total": 2230
+        },
+        "glenn": {
+            "ia": 0,
+            "total": 152
+        },
+        "humboldt": {
+            "ia": 0,
+            "total": 535
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 566
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 9
+        },
+        "kern": {
+            "ia": 0,
+            "total": 5753
+        },
+        "kings": {
+            "ia": 0,
+            "total": 385
+        },
+        "lake": {
+            "ia": 0,
+            "total": 104
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 72
+        },
+        "los-angeles": {
+            "ia": 149,
+            "total": 60074
+        },
+        "madera": {
+            "ia": 0,
+            "total": 380
+        },
+        "marin": {
+            "ia": 0,
+            "total": 1166
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 340
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 439
+        },
+        "merced": {
+            "ia": 0,
+            "total": 829
+        },
+        "mono": {
+            "ia": 0,
+            "total": 70
+        },
+        "monterey": {
+            "ia": 0,
+            "total": 1750
+        },
+        "napa": {
+            "ia": 0,
+            "total": 460
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 419
+        },
+        "orange": {
+            "ia": 15,
+            "total": 11211
+        },
+        "placer": {
+            "ia": 0,
+            "total": 1373
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 116
+        },
+        "riverside": {
+            "ia": 29,
+            "total": 14157
+        },
+        "sacramento": {
+            "ia": 2,
+            "total": 9775
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 141
+        },
+        "san-bernardino": {
+            "ia": 22,
+            "total": 15529
+        },
+        "san-diego": {
+            "ia": 10,
+            "total": 15810
+        },
+        "san-francisco": {
+            "ia": 4,
+            "total": 4661
+        },
+        "san-joaquin": {
+            "ia": 0,
+            "total": 1743
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 982
+        },
+        "san-mateo": {
+            "ia": 5,
+            "total": 2643
+        },
+        "santa-barbara": {
+            "ia": 5,
+            "total": 1747
+        },
+        "santa-clara": {
+            "ia": 8,
+            "total": 5602
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 1422
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 413
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 68
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 237
+        },
+        "solano": {
+            "ia": 0,
+            "total": 759
+        },
+        "sonoma": {
+            "ia": 5,
+            "total": 1542
+        },
+        "stanislaus": {
+            "ia": 0,
+            "total": 2072
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 382
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 270
+        },
+        "tulare": {
+            "ia": 10,
+            "total": 2801
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 453
+        },
+        "ventura": {
+            "ia": 10,
+            "total": 5155
+        },
+        "yolo": {
+            "ia": 0,
+            "total": 435
+        },
+        "yuba": {
+            "ia": 0,
+            "total": 489
+        }
+    },
+    "public-services.administration.clerk": {
+        "null": {
+            "ia": 54,
+            "total": 12114
+        },
+        "alameda": {
+            "ia": 8,
+            "total": 6038
+        },
+        "amador": {
+            "ia": 0,
+            "total": 67
+        },
+        "butte": {
+            "ia": 0,
+            "total": 632
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 69
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 102
+        },
+        "contra-costa": {
+            "ia": 12,
+            "total": 9042
+        },
+        "del-norte": {
+            "ia": 0,
+            "total": 179
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 120
+        },
+        "fresno": {
+            "ia": 3,
+            "total": 2342
+        },
+        "glenn": {
+            "ia": 0,
+            "total": 79
+        },
+        "humboldt": {
+            "ia": 0,
+            "total": 133
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 612
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 213
+        },
+        "kern": {
+            "ia": 0,
+            "total": 1082
+        },
+        "kings": {
+            "ia": 0,
+            "total": 283
+        },
+        "lake": {
+            "ia": 0,
+            "total": 164
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 118
+        },
+        "los-angeles": {
+            "ia": 860,
+            "total": 80489
+        },
+        "madera": {
+            "ia": 0,
+            "total": 247
+        },
+        "marin": {
+            "ia": 1,
+            "total": 419
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 178
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 305
+        },
+        "merced": {
+            "ia": 1,
+            "total": 904
+        },
+        "modoc": {
+            "ia": 0,
+            "total": 18
+        },
+        "mono": {
+            "ia": 0,
+            "total": 72
+        },
+        "monterey": {
+            "ia": 1,
+            "total": 1667
+        },
+        "napa": {
+            "ia": 0,
+            "total": 553
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 202
+        },
+        "orange": {
+            "ia": 26,
+            "total": 3748
+        },
+        "placer": {
+            "ia": 0,
+            "total": 1521
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 56
+        },
+        "riverside": {
+            "ia": 0,
+            "total": 2758
+        },
+        "sacramento": {
+            "ia": 2,
+            "total": 2099
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 280
+        },
+        "san-bernardino": {
+            "ia": 2,
+            "total": 1641
+        },
+        "san-diego": {
+            "ia": 39,
+            "total": 6115
+        },
+        "san-francisco": {
+            "ia": 8,
+            "total": 10869
+        },
+        "san-joaquin": {
+            "ia": 3,
+            "total": 1155
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 812
+        },
+        "san-mateo": {
+            "ia": 0,
+            "total": 659
+        },
+        "santa-barbara": {
+            "ia": 6,
+            "total": 4160
+        },
+        "santa-clara": {
+            "ia": 34,
+            "total": 6884
+        },
+        "santa-cruz": {
+            "ia": 2,
+            "total": 1360
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 954
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 215
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 70
+        },
+        "solano": {
+            "ia": 0,
+            "total": 1091
+        },
+        "sonoma": {
+            "ia": 0,
+            "total": 1239
+        },
+        "stanislaus": {
+            "ia": 11,
+            "total": 4104
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 315
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 219
+        },
+        "trinity": {
+            "ia": 0,
+            "total": 1
+        },
+        "tulare": {
+            "ia": 5,
+            "total": 889
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 149
+        },
+        "ventura": {
+            "ia": 0,
+            "total": 443
+        },
+        "yolo": {
+            "ia": 0,
+            "total": 601
+        },
+        "yuba": {
+            "ia": 0,
+            "total": 221
+        }
+    },
+    "public-services.administration.legal-typist": {
+        "null": {
+            "ia": 11,
+            "total": 3012
+        },
+        "monterey": {
+            "ia": 0,
+            "total": 29
+        }
+    },
+    "public-services.administration.typist": {
+        "null": {
+            "ia": 92,
+            "total": 42832
+        },
+        "los-angeles": {
+            "ia": 0,
+            "total": 9
+        },
+        "santa-barbara": {
+            "ia": 0,
+            "total": 3
+        }
+    },
+    "public-services.dmv": {
+        "null": {
+            "ia": 167,
+            "total": 38015
+        },
+        "alameda": {
+            "ia": 0,
+            "total": 47
+        },
+        "butte": {
+            "ia": 0,
+            "total": 1
+        },
+        "contra-costa": {
+            "ia": 0,
+            "total": 26
+        },
+        "fresno": {
+            "ia": 0,
+            "total": 5
+        },
+        "humboldt": {
+            "ia": 0,
+            "total": 7
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 10
+        },
+        "kern": {
+            "ia": 0,
+            "total": 57
+        },
+        "los-angeles": {
+            "ia": 0,
+            "total": 199
+        },
+        "marin": {
+            "ia": 0,
+            "total": 10
+        },
+        "monterey": {
+            "ia": 0,
+            "total": 25
+        },
+        "napa": {
+            "ia": 0,
+            "total": 11
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 6
+        },
+        "orange": {
+            "ia": 0,
+            "total": 155
+        },
+        "placer": {
+            "ia": 0,
+            "total": 9
+        },
+        "riverside": {
+            "ia": 0,
+            "total": 28
+        },
+        "sacramento": {
+            "ia": 0,
+            "total": 78
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 1
+        },
+        "san-bernardino": {
+            "ia": 0,
+            "total": 23
+        },
+        "san-diego": {
+            "ia": 0,
+            "total": 62
+        },
+        "san-francisco": {
+            "ia": 0,
+            "total": 3
+        },
+        "san-joaquin": {
+            "ia": 0,
+            "total": 30
+        },
+        "san-mateo": {
+            "ia": 0,
+            "total": 14
+        },
+        "santa-barbara": {
+            "ia": 0,
+            "total": 29
+        },
+        "santa-clara": {
+            "ia": 0,
+            "total": 42
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 6
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 8
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 2
+        },
+        "solano": {
+            "ia": 0,
+            "total": 9
+        },
+        "sonoma": {
+            "ia": 0,
+            "total": 2
+        },
+        "stanislaus": {
+            "ia": 0,
+            "total": 11
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 4
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 6
+        }
+    },
+    "public-services.social-services": {
+        "null": {
+            "ia": 36,
+            "total": 3103
+        },
+        "alameda": {
+            "ia": 48,
+            "total": 5086
+        },
+        "amador": {
+            "ia": 0,
+            "total": 127
+        },
+        "butte": {
+            "ia": 3,
+            "total": 2356
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 132
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 105
+        },
+        "contra-costa": {
+            "ia": 15,
+            "total": 3813
+        },
+        "del-norte": {
+            "ia": 0,
+            "total": 123
+        },
+        "el-dorado": {
+            "ia": 3,
+            "total": 993
+        },
+        "fresno": {
+            "ia": 19,
+            "total": 7608
+        },
+        "glenn": {
+            "ia": 0,
+            "total": 149
+        },
+        "humboldt": {
+            "ia": 9,
+            "total": 1418
+        },
+        "imperial": {
+            "ia": 2,
+            "total": 1482
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 51
+        },
+        "kern": {
+            "ia": 10,
+            "total": 3302
+        },
+        "kings": {
+            "ia": 0,
+            "total": 733
+        },
+        "lake": {
+            "ia": 0,
+            "total": 214
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 47
+        },
+        "los-angeles": {
+            "ia": 982,
+            "total": 70254
+        },
+        "madera": {
+            "ia": 0,
+            "total": 775
+        },
+        "marin": {
+            "ia": 1,
+            "total": 822
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 282
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 959
+        },
+        "merced": {
+            "ia": 0,
+            "total": 723
+        },
+        "mono": {
+            "ia": 0,
+            "total": 28
+        },
+        "monterey": {
+            "ia": 6,
+            "total": 3333
+        },
+        "napa": {
+            "ia": 0,
+            "total": 465
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 358
+        },
+        "orange": {
+            "ia": 118,
+            "total": 14024
+        },
+        "placer": {
+            "ia": 0,
+            "total": 1
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 44
+        },
+        "riverside": {
+            "ia": 37,
+            "total": 13829
+        },
+        "sacramento": {
+            "ia": 5,
+            "total": 1344
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 253
+        },
+        "san-bernardino": {
+            "ia": 40,
+            "total": 16058
+        },
+        "san-diego": {
+            "ia": 6,
+            "total": 1364
+        },
+        "san-francisco": {
+            "ia": 0,
+            "total": 5914
+        },
+        "san-joaquin": {
+            "ia": 1,
+            "total": 3628
+        },
+        "san-luis-obispo": {
+            "ia": 3,
+            "total": 461
+        },
+        "san-mateo": {
+            "ia": 5,
+            "total": 1582
+        },
+        "santa-barbara": {
+            "ia": 4,
+            "total": 2978
+        },
+        "santa-clara": {
+            "ia": 36,
+            "total": 8382
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 581
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 1757
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 47
+        },
+        "siskiyou": {
+            "ia": 1,
+            "total": 239
+        },
+        "solano": {
+            "ia": 8,
+            "total": 1745
+        },
+        "sonoma": {
+            "ia": 2,
+            "total": 2366
+        },
+        "stanislaus": {
+            "ia": 6,
+            "total": 847
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 222
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 770
+        },
+        "tulare": {
+            "ia": 5,
+            "total": 1038
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 353
+        },
+        "ventura": {
+            "ia": 0,
+            "total": 263
+        },
+        "yolo": {
+            "ia": 0,
+            "total": 274
+        },
+        "yuba": {
+            "ia": 0,
+            "total": 868
+        }
+    },
+    "public-services.transit-transportation": {
+        "null": {
+            "ia": 2464,
+            "total": 83151
+        },
+        "alameda": {
+            "ia": 33,
+            "total": 7140
+        },
+        "amador": {
+            "ia": 0,
+            "total": 116
+        },
+        "butte": {
+            "ia": 0,
+            "total": 111
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 34
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 47
+        },
+        "contra-costa": {
+            "ia": 9,
+            "total": 1462
+        },
+        "del-norte": {
+            "ia": 0,
+            "total": 4
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 325
+        },
+        "fresno": {
+            "ia": 7,
+            "total": 1611
+        },
+        "humboldt": {
+            "ia": 0,
+            "total": 295
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 64
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 10
+        },
+        "kern": {
+            "ia": 0,
+            "total": 330
+        },
+        "kings": {
+            "ia": 0,
+            "total": 56
+        },
+        "lake": {
+            "ia": 0,
+            "total": 8
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 14
+        },
+        "los-angeles": {
+            "ia": 238,
+            "total": 44616
+        },
+        "madera": {
+            "ia": 0,
+            "total": 32
+        },
+        "marin": {
+            "ia": 5,
+            "total": 190
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 37
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 124
+        },
+        "merced": {
+            "ia": 0,
+            "total": 67
+        },
+        "mono": {
+            "ia": 0,
+            "total": 5
+        },
+        "monterey": {
+            "ia": 4,
+            "total": 909
+        },
+        "napa": {
+            "ia": 0,
+            "total": 63
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 160
+        },
+        "orange": {
+            "ia": 36,
+            "total": 6066
+        },
+        "placer": {
+            "ia": 3,
+            "total": 358
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 1
+        },
+        "riverside": {
+            "ia": 9,
+            "total": 2220
+        },
+        "sacramento": {
+            "ia": 6,
+            "total": 3559
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 19
+        },
+        "san-bernardino": {
+            "ia": 1,
+            "total": 646
+        },
+        "san-diego": {
+            "ia": 3,
+            "total": 4114
+        },
+        "san-francisco": {
+            "ia": 54,
+            "total": 19594
+        },
+        "san-joaquin": {
+            "ia": 3,
+            "total": 931
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 356
+        },
+        "san-mateo": {
+            "ia": 9,
+            "total": 2551
+        },
+        "santa-barbara": {
+            "ia": 2,
+            "total": 2486
+        },
+        "santa-clara": {
+            "ia": 23,
+            "total": 7916
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 1098
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 201
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 330
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 95
+        },
+        "solano": {
+            "ia": 0,
+            "total": 137
+        },
+        "sonoma": {
+            "ia": 1,
+            "total": 529
+        },
+        "stanislaus": {
+            "ia": 0,
+            "total": 998
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 256
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 47
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 43
+        },
+        "ventura": {
+            "ia": 1,
+            "total": 443
+        },
+        "yolo": {
+            "ia": 1,
+            "total": 88
+        },
+        "yuba": {
+            "ia": 0,
+            "total": 23
+        }
+    },
+    "public-services.volunteer": {
+        "null": {
+            "ia": 9,
+            "total": 958
+        },
+        "alameda": {
+            "ia": 3,
+            "total": 12
+        },
+        "contra-costa": {
+            "ia": 0,
+            "total": 29
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 9
+        },
+        "fresno": {
+            "ia": 0,
+            "total": 10
+        },
+        "kern": {
+            "ia": 0,
+            "total": 26
+        },
+        "kings": {
+            "ia": 0,
+            "total": 6
+        },
+        "lake": {
+            "ia": 0,
+            "total": 14
+        },
+        "los-angeles": {
+            "ia": 3,
+            "total": 91
+        },
+        "marin": {
+            "ia": 0,
+            "total": 19
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 197
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 5
+        },
+        "merced": {
+            "ia": 0,
+            "total": 1
+        },
+        "monterey": {
+            "ia": 0,
+            "total": 96
+        },
+        "napa": {
+            "ia": 0,
+            "total": 16
+        },
+        "orange": {
+            "ia": 0,
+            "total": 35
+        },
+        "placer": {
+            "ia": 0,
+            "total": 27
+        },
+        "riverside": {
+            "ia": 0,
+            "total": 93
+        },
+        "sacramento": {
+            "ia": 0,
+            "total": 51
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 3
+        },
+        "san-bernardino": {
+            "ia": 0,
+            "total": 55
+        },
+        "san-diego": {
+            "ia": 0,
+            "total": 44
+        },
+        "san-francisco": {
+            "ia": 0,
+            "total": 58
+        },
+        "san-joaquin": {
+            "ia": 0,
+            "total": 21
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 1
+        },
+        "san-mateo": {
+            "ia": 42,
+            "total": 7901
+        },
+        "santa-barbara": {
+            "ia": 0,
+            "total": 58
+        },
+        "santa-clara": {
+            "ia": 0,
+            "total": 59
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 52
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 37
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 1
+        },
+        "solano": {
+            "ia": 0,
+            "total": 11
+        },
+        "sonoma": {
+            "ia": 0,
+            "total": 52
+        },
+        "stanislaus": {
+            "ia": 0,
+            "total": 13
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 4
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 5
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 4
+        },
+        "yolo": {
+            "ia": 0,
+            "total": 3
+        }
+    },
+    "schools.administration": {
+        "null": {
+            "ia": 1,
+            "total": 25
+        },
+        "alameda": {
+            "ia": 2,
+            "total": 930
+        },
+        "amador": {
+            "ia": 0,
+            "total": 28
+        },
+        "butte": {
+            "ia": 0,
+            "total": 181
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 4
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 4
+        },
+        "contra-costa": {
+            "ia": 1,
+            "total": 620
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 41
+        },
+        "fresno": {
+            "ia": 0,
+            "total": 379
+        },
+        "humboldt": {
+            "ia": 0,
+            "total": 43
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 102
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 5
+        },
+        "kern": {
+            "ia": 0,
+            "total": 180
+        },
+        "kings": {
+            "ia": 0,
+            "total": 71
+        },
+        "lake": {
+            "ia": 0,
+            "total": 94
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 2
+        },
+        "los-angeles": {
+            "ia": 9,
+            "total": 6523
+        },
+        "madera": {
+            "ia": 0,
+            "total": 35
+        },
+        "marin": {
+            "ia": 3,
+            "total": 91
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 8
+        },
+        "merced": {
+            "ia": 0,
+            "total": 256
+        },
+        "mono": {
+            "ia": 0,
+            "total": 3
+        },
+        "monterey": {
+            "ia": 0,
+            "total": 290
+        },
+        "napa": {
+            "ia": 0,
+            "total": 14
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 10
+        },
+        "orange": {
+            "ia": 3,
+            "total": 1308
+        },
+        "placer": {
+            "ia": 0,
+            "total": 105
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 11
+        },
+        "riverside": {
+            "ia": 0,
+            "total": 1377
+        },
+        "sacramento": {
+            "ia": 3,
+            "total": 951
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 107
+        },
+        "san-bernardino": {
+            "ia": 0,
+            "total": 795
+        },
+        "san-diego": {
+            "ia": 1,
+            "total": 2172
+        },
+        "san-francisco": {
+            "ia": 0,
+            "total": 43
+        },
+        "san-joaquin": {
+            "ia": 0,
+            "total": 210
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 69
+        },
+        "san-mateo": {
+            "ia": 0,
+            "total": 334
+        },
+        "santa-barbara": {
+            "ia": 2,
+            "total": 125
+        },
+        "santa-clara": {
+            "ia": 1,
+            "total": 497
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 80
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 84
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 12
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 6
+        },
+        "solano": {
+            "ia": 0,
+            "total": 101
+        },
+        "sonoma": {
+            "ia": 0,
+            "total": 378
+        },
+        "stanislaus": {
+            "ia": 0,
+            "total": 115
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 213
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 67
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 53
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 25
+        },
+        "ventura": {
+            "ia": 2,
+            "total": 1049
+        },
+        "yolo": {
+            "ia": 0,
+            "total": 38
+        }
+    },
+    "schools.food": {
+        "null": {
+            "ia": 1,
+            "total": 154
+        },
+        "alameda": {
+            "ia": 4,
+            "total": 1463
+        },
+        "alpine": {
+            "ia": 0,
+            "total": 34
+        },
+        "amador": {
+            "ia": 0,
+            "total": 35
+        },
+        "butte": {
+            "ia": 0,
+            "total": 94
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 14
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 7
+        },
+        "contra-costa": {
+            "ia": 2,
+            "total": 1828
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 106
+        },
+        "fresno": {
+            "ia": 4,
+            "total": 1143
+        },
+        "humboldt": {
+            "ia": 0,
+            "total": 164
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 487
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 14
+        },
+        "kern": {
+            "ia": 3,
+            "total": 2371
+        },
+        "kings": {
+            "ia": 0,
+            "total": 383
+        },
+        "lake": {
+            "ia": 0,
+            "total": 585
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 6
+        },
+        "los-angeles": {
+            "ia": 74,
+            "total": 12858
+        },
+        "madera": {
+            "ia": 1,
+            "total": 106
+        },
+        "marin": {
+            "ia": 0,
+            "total": 229
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 27
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 105
+        },
+        "merced": {
+            "ia": 0,
+            "total": 331
+        },
+        "modoc": {
+            "ia": 0,
+            "total": 22
+        },
+        "mono": {
+            "ia": 0,
+            "total": 9
+        },
+        "monterey": {
+            "ia": 0,
+            "total": 555
+        },
+        "napa": {
+            "ia": 0,
+            "total": 30
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 101
+        },
+        "orange": {
+            "ia": 30,
+            "total": 4057
+        },
+        "placer": {
+            "ia": 0,
+            "total": 545
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 1
+        },
+        "riverside": {
+            "ia": 9,
+            "total": 4423
+        },
+        "sacramento": {
+            "ia": 4,
+            "total": 1627
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 245
+        },
+        "san-bernardino": {
+            "ia": 0,
+            "total": 2894
+        },
+        "san-diego": {
+            "ia": 56,
+            "total": 9324
+        },
+        "san-francisco": {
+            "ia": 1,
+            "total": 103
+        },
+        "san-joaquin": {
+            "ia": 0,
+            "total": 809
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 356
+        },
+        "san-mateo": {
+            "ia": 0,
+            "total": 592
+        },
+        "santa-barbara": {
+            "ia": 0,
+            "total": 213
+        },
+        "santa-clara": {
+            "ia": 3,
+            "total": 1078
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 71
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 238
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 82
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 28
+        },
+        "solano": {
+            "ia": 0,
+            "total": 113
+        },
+        "sonoma": {
+            "ia": 0,
+            "total": 564
+        },
+        "stanislaus": {
+            "ia": 2,
+            "total": 806
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 78
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 94
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 415
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 59
+        },
+        "ventura": {
+            "ia": 8,
+            "total": 1724
+        },
+        "yolo": {
+            "ia": 0,
+            "total": 105
+        }
+    },
+    "schools.not-provided": {
+        "null": {
+            "ia": 0,
+            "total": 45
+        },
+        "alameda": {
+            "ia": 0,
+            "total": 1
+        },
+        "amador": {
+            "ia": 0,
+            "total": 2
+        },
+        "butte": {
+            "ia": 0,
+            "total": 1
+        },
+        "contra-costa": {
+            "ia": 3,
+            "total": 448
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 39
+        },
+        "fresno": {
+            "ia": 0,
+            "total": 113
+        },
+        "glenn": {
+            "ia": 1,
+            "total": 1319
+        },
+        "humboldt": {
+            "ia": 0,
+            "total": 2
+        },
+        "imperial": {
+            "ia": 1,
+            "total": 6147
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 3
+        },
+        "kern": {
+            "ia": 1,
+            "total": 1295
+        },
+        "kings": {
+            "ia": 0,
+            "total": 1
+        },
+        "lake": {
+            "ia": 0,
+            "total": 78
+        },
+        "los-angeles": {
+            "ia": 6,
+            "total": 1014
+        },
+        "madera": {
+            "ia": 0,
+            "total": 166
+        },
+        "marin": {
+            "ia": 0,
+            "total": 12
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 404
+        },
+        "mendocino": {
+            "ia": 2,
+            "total": 1176
+        },
+        "merced": {
+            "ia": 12,
+            "total": 6772
+        },
+        "mono": {
+            "ia": 0,
+            "total": 19
+        },
+        "monterey": {
+            "ia": 0,
+            "total": 503
+        },
+        "orange": {
+            "ia": 7,
+            "total": 616
+        },
+        "placer": {
+            "ia": 0,
+            "total": 126
+        },
+        "plumas": {
+            "ia": 1,
+            "total": 153
+        },
+        "riverside": {
+            "ia": 46,
+            "total": 11864
+        },
+        "sacramento": {
+            "ia": 9,
+            "total": 3693
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 213
+        },
+        "san-bernardino": {
+            "ia": 22,
+            "total": 5698
+        },
+        "san-diego": {
+            "ia": 1,
+            "total": 233
+        },
+        "san-francisco": {
+            "ia": 5,
+            "total": 1009
+        },
+        "san-joaquin": {
+            "ia": 0,
+            "total": 1
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 94
+        },
+        "san-mateo": {
+            "ia": 30,
+            "total": 6436
+        },
+        "santa-barbara": {
+            "ia": 0,
+            "total": 46
+        },
+        "santa-clara": {
+            "ia": 11,
+            "total": 1846
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 335
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 132
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 312
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 4
+        },
+        "solano": {
+            "ia": 0,
+            "total": 2
+        },
+        "sonoma": {
+            "ia": 0,
+            "total": 31
+        },
+        "stanislaus": {
+            "ia": 1,
+            "total": 398
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 1
+        },
+        "tehama": {
+            "ia": 5,
+            "total": 681
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 340
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 5
+        },
+        "ventura": {
+            "ia": 2,
+            "total": 4452
+        },
+        "yolo": {
+            "ia": 0,
+            "total": 2
+        }
+    },
+    "schools.schools": {
+        "null": {
+            "ia": 18,
+            "total": 3295
+        },
+        "alameda": {
+            "ia": 109,
+            "total": 27083
+        },
+        "alpine": {
+            "ia": 0,
+            "total": 532
+        },
+        "amador": {
+            "ia": 0,
+            "total": 1460
+        },
+        "butte": {
+            "ia": 16,
+            "total": 8735
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 156
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 261
+        },
+        "contra-costa": {
+            "ia": 98,
+            "total": 27303
+        },
+        "del-norte": {
+            "ia": 1,
+            "total": 546
+        },
+        "el-dorado": {
+            "ia": 23,
+            "total": 8014
+        },
+        "fresno": {
+            "ia": 70,
+            "total": 27253
+        },
+        "glenn": {
+            "ia": 0,
+            "total": 156
+        },
+        "humboldt": {
+            "ia": 3,
+            "total": 3661
+        },
+        "imperial": {
+            "ia": 13,
+            "total": 11763
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 586
+        },
+        "kern": {
+            "ia": 15,
+            "total": 29192
+        },
+        "kings": {
+            "ia": 9,
+            "total": 8207
+        },
+        "lake": {
+            "ia": 10,
+            "total": 6161
+        },
+        "lassen": {
+            "ia": 1,
+            "total": 721
+        },
+        "los-angeles": {
+            "ia": 1034,
+            "total": 163311
+        },
+        "madera": {
+            "ia": 4,
+            "total": 7771
+        },
+        "marin": {
+            "ia": 41,
+            "total": 10059
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 312
+        },
+        "mendocino": {
+            "ia": 6,
+            "total": 5213
+        },
+        "merced": {
+            "ia": 22,
+            "total": 16783
+        },
+        "modoc": {
+            "ia": 0,
+            "total": 514
+        },
+        "mono": {
+            "ia": 0,
+            "total": 502
+        },
+        "monterey": {
+            "ia": 21,
+            "total": 12554
+        },
+        "napa": {
+            "ia": 8,
+            "total": 3257
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 3429
+        },
+        "orange": {
+            "ia": 273,
+            "total": 57196
+        },
+        "placer": {
+            "ia": 33,
+            "total": 14203
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 584
+        },
+        "riverside": {
+            "ia": 100,
+            "total": 59522
+        },
+        "sacramento": {
+            "ia": 50,
+            "total": 24436
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 1827
+        },
+        "san-bernardino": {
+            "ia": 117,
+            "total": 70631
+        },
+        "san-diego": {
+            "ia": 366,
+            "total": 106833
+        },
+        "san-francisco": {
+            "ia": 36,
+            "total": 15505
+        },
+        "san-joaquin": {
+            "ia": 18,
+            "total": 14341
+        },
+        "san-luis-obispo": {
+            "ia": 22,
+            "total": 13991
+        },
+        "san-mateo": {
+            "ia": 35,
+            "total": 12310
+        },
+        "santa-barbara": {
+            "ia": 4,
+            "total": 2725
+        },
+        "santa-clara": {
+            "ia": 130,
+            "total": 25642
+        },
+        "santa-cruz": {
+            "ia": 11,
+            "total": 4421
+        },
+        "shasta": {
+            "ia": 7,
+            "total": 8462
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 978
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 1494
+        },
+        "solano": {
+            "ia": 7,
+            "total": 9429
+        },
+        "sonoma": {
+            "ia": 20,
+            "total": 12562
+        },
+        "stanislaus": {
+            "ia": 32,
+            "total": 22246
+        },
+        "sutter": {
+            "ia": 5,
+            "total": 1903
+        },
+        "tehama": {
+            "ia": 7,
+            "total": 6076
+        },
+        "tulare": {
+            "ia": 8,
+            "total": 16306
+        },
+        "tuolumne": {
+            "ia": 1,
+            "total": 1450
+        },
+        "ventura": {
+            "ia": 110,
+            "total": 34447
+        },
+        "yolo": {
+            "ia": 1,
+            "total": 922
+        }
+    },
+    "schools.security": {
+        "null": {
+            "ia": 0,
+            "total": 28
+        },
+        "alameda": {
+            "ia": 2,
+            "total": 348
+        },
+        "contra-costa": {
+            "ia": 0,
+            "total": 160
+        },
+        "fresno": {
+            "ia": 0,
+            "total": 18
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 33
+        },
+        "kern": {
+            "ia": 0,
+            "total": 357
+        },
+        "kings": {
+            "ia": 0,
+            "total": 6
+        },
+        "lake": {
+            "ia": 0,
+            "total": 1
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 1
+        },
+        "los-angeles": {
+            "ia": 5,
+            "total": 1879
+        },
+        "madera": {
+            "ia": 0,
+            "total": 5
+        },
+        "marin": {
+            "ia": 0,
+            "total": 10
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 3
+        },
+        "merced": {
+            "ia": 0,
+            "total": 3
+        },
+        "monterey": {
+            "ia": 0,
+            "total": 45
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 7
+        },
+        "orange": {
+            "ia": 2,
+            "total": 84
+        },
+        "riverside": {
+            "ia": 5,
+            "total": 688
+        },
+        "sacramento": {
+            "ia": 0,
+            "total": 15
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 5
+        },
+        "san-bernardino": {
+            "ia": 0,
+            "total": 562
+        },
+        "san-diego": {
+            "ia": 0,
+            "total": 614
+        },
+        "san-francisco": {
+            "ia": 1,
+            "total": 405
+        },
+        "san-joaquin": {
+            "ia": 0,
+            "total": 110
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 8
+        },
+        "san-mateo": {
+            "ia": 0,
+            "total": 50
+        },
+        "santa-clara": {
+            "ia": 0,
+            "total": 32
+        },
+        "sonoma": {
+            "ia": 0,
+            "total": 22
+        },
+        "stanislaus": {
+            "ia": 0,
+            "total": 6
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 8
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 79
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 5
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 1
+        },
+        "ventura": {
+            "ia": 2,
+            "total": 81
+        }
+    },
+    "schools.teacher.coach": {
+        "null": {
+            "ia": 0,
+            "total": 22
+        },
+        "alameda": {
+            "ia": 3,
+            "total": 811
+        },
+        "amador": {
+            "ia": 0,
+            "total": 2
+        },
+        "butte": {
+            "ia": 0,
+            "total": 201
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 53
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 19
+        },
+        "contra-costa": {
+            "ia": 8,
+            "total": 2512
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 2
+        },
+        "fresno": {
+            "ia": 0,
+            "total": 633
+        },
+        "glenn": {
+            "ia": 0,
+            "total": 29
+        },
+        "humboldt": {
+            "ia": 0,
+            "total": 58
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 419
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 18
+        },
+        "kern": {
+            "ia": 0,
+            "total": 292
+        },
+        "kings": {
+            "ia": 1,
+            "total": 827
+        },
+        "lake": {
+            "ia": 0,
+            "total": 62
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 2
+        },
+        "los-angeles": {
+            "ia": 12,
+            "total": 5064
+        },
+        "madera": {
+            "ia": 0,
+            "total": 668
+        },
+        "marin": {
+            "ia": 3,
+            "total": 647
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 126
+        },
+        "merced": {
+            "ia": 0,
+            "total": 374
+        },
+        "modoc": {
+            "ia": 0,
+            "total": 2
+        },
+        "monterey": {
+            "ia": 0,
+            "total": 244
+        },
+        "napa": {
+            "ia": 0,
+            "total": 20
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 132
+        },
+        "orange": {
+            "ia": 9,
+            "total": 2800
+        },
+        "placer": {
+            "ia": 2,
+            "total": 1508
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 25
+        },
+        "riverside": {
+            "ia": 1,
+            "total": 3165
+        },
+        "sacramento": {
+            "ia": 3,
+            "total": 511
+        },
+        "san-benito": {
+            "ia": 3,
+            "total": 111
+        },
+        "san-bernardino": {
+            "ia": 2,
+            "total": 2067
+        },
+        "san-diego": {
+            "ia": 13,
+            "total": 5320
+        },
+        "san-francisco": {
+            "ia": 0,
+            "total": 88
+        },
+        "san-joaquin": {
+            "ia": 0,
+            "total": 210
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 106
+        },
+        "san-mateo": {
+            "ia": 2,
+            "total": 390
+        },
+        "santa-barbara": {
+            "ia": 0,
+            "total": 299
+        },
+        "santa-clara": {
+            "ia": 6,
+            "total": 1131
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 183
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 57
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 42
+        },
+        "siskiyou": {
+            "ia": 2,
+            "total": 191
+        },
+        "solano": {
+            "ia": 0,
+            "total": 1
+        },
+        "sonoma": {
+            "ia": 4,
+            "total": 631
+        },
+        "stanislaus": {
+            "ia": 1,
+            "total": 792
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 5
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 41
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 1228
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 185
+        },
+        "ventura": {
+            "ia": 3,
+            "total": 940
+        }
+    },
+    "schools.teacher.counselor": {
+        "null": {
+            "ia": 0,
+            "total": 36
+        },
+        "alameda": {
+            "ia": 0,
+            "total": 496
+        },
+        "alpine": {
+            "ia": 0,
+            "total": 9
+        },
+        "amador": {
+            "ia": 0,
+            "total": 11
+        },
+        "butte": {
+            "ia": 0,
+            "total": 119
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 1
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 3
+        },
+        "contra-costa": {
+            "ia": 0,
+            "total": 488
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 41
+        },
+        "fresno": {
+            "ia": 0,
+            "total": 240
+        },
+        "glenn": {
+            "ia": 0,
+            "total": 8
+        },
+        "humboldt": {
+            "ia": 0,
+            "total": 13
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 145
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 6
+        },
+        "kern": {
+            "ia": 3,
+            "total": 406
+        },
+        "kings": {
+            "ia": 0,
+            "total": 70
+        },
+        "lake": {
+            "ia": 0,
+            "total": 128
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 6
+        },
+        "los-angeles": {
+            "ia": 21,
+            "total": 3726
+        },
+        "madera": {
+            "ia": 0,
+            "total": 88
+        },
+        "marin": {
+            "ia": 0,
+            "total": 181
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 8
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 49
+        },
+        "merced": {
+            "ia": 0,
+            "total": 262
+        },
+        "modoc": {
+            "ia": 0,
+            "total": 5
+        },
+        "monterey": {
+            "ia": 0,
+            "total": 196
+        },
+        "napa": {
+            "ia": 0,
+            "total": 24
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 79
+        },
+        "orange": {
+            "ia": 2,
+            "total": 802
+        },
+        "placer": {
+            "ia": 2,
+            "total": 234
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 9
+        },
+        "riverside": {
+            "ia": 8,
+            "total": 1548
+        },
+        "sacramento": {
+            "ia": 1,
+            "total": 448
+        },
+        "san-benito": {
+            "ia": 0,
+            "total": 28
+        },
+        "san-bernardino": {
+            "ia": 6,
+            "total": 904
+        },
+        "san-diego": {
+            "ia": 8,
+            "total": 2044
+        },
+        "san-francisco": {
+            "ia": 0,
+            "total": 374
+        },
+        "san-joaquin": {
+            "ia": 0,
+            "total": 253
+        },
+        "san-luis-obispo": {
+            "ia": 0,
+            "total": 156
+        },
+        "san-mateo": {
+            "ia": 0,
+            "total": 273
+        },
+        "santa-barbara": {
+            "ia": 0,
+            "total": 91
+        },
+        "santa-clara": {
+            "ia": 2,
+            "total": 452
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 59
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 129
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 14
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 25
+        },
+        "solano": {
+            "ia": 0,
+            "total": 71
+        },
+        "sonoma": {
+            "ia": 0,
+            "total": 233
+        },
+        "stanislaus": {
+            "ia": 1,
+            "total": 277
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 7
+        },
+        "tehama": {
+            "ia": 0,
+            "total": 85
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 207
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 14
+        },
+        "ventura": {
+            "ia": 0,
+            "total": 719
+        },
+        "yolo": {
+            "ia": 2,
+            "total": 35
+        }
+    },
+    "schools.teacher.special-education": {
+        "null": {
+            "ia": 0,
+            "total": 18
+        },
+        "alameda": {
+            "ia": 37,
+            "total": 4018
+        },
+        "alpine": {
+            "ia": 0,
+            "total": 18
+        },
+        "amador": {
+            "ia": 0,
+            "total": 6
+        },
+        "butte": {
+            "ia": 0,
+            "total": 315
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 30
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 2
+        },
+        "contra-costa": {
+            "ia": 35,
+            "total": 4176
+        },
+        "el-dorado": {
+            "ia": 0,
+            "total": 96
+        },
+        "fresno": {
+            "ia": 0,
+            "total": 1329
+        },
+        "humboldt": {
+            "ia": 3,
+            "total": 141
+        },
+        "imperial": {
+            "ia": 0,
+            "total": 785
+        },
+        "inyo": {
+            "ia": 0,
+            "total": 5
+        },
+        "kern": {
+            "ia": 0,
+            "total": 496
+        },
+        "kings": {
+            "ia": 0,
+            "total": 318
+        },
+        "lake": {
+            "ia": 2,
+            "total": 1296
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 44
+        },
+        "los-angeles": {
+            "ia": 135,
+            "total": 17039
+        },
+        "madera": {
+            "ia": 0,
+            "total": 407
+        },
+        "marin": {
+            "ia": 0,
+            "total": 240
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 53
+        },
+        "mendocino": {
+            "ia": 0,
+            "total": 229
+        },
+        "merced": {
+            "ia": 0,
+            "total": 466
+        },
+        "modoc": {
+            "ia": 0,
+            "total": 22
+        },
+        "mono": {
+            "ia": 0,
+            "total": 6
+        },
+        "monterey": {
+            "ia": 1,
+            "total": 342
+        },
+        "napa": {
+            "ia": 0,
+            "total": 145
+        },
+        "nevada": {
+            "ia": 0,
+            "total": 205
+        },
+        "orange": {
+            "ia": 37,
+            "total": 6193
+        },
+        "placer": {
+            "ia": 3,
+            "total": 1155
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 78
+        },
+        "riverside": {
+            "ia": 11,
+            "total": 4744
+        },
+        "sacramento": {
+            "ia": 12,
+            "total": 1909
+        },
+        "san-benito": {
+            "ia": 1,
+            "total": 584
+        },
+        "san-bernardino": {
+            "ia": 0,
+            "total": 2290
+        },
+        "san-diego": {
+            "ia": 59,
+            "total": 14982
+        },
+        "san-francisco": {
+            "ia": 1,
+            "total": 933
+        },
+        "san-joaquin": {
+            "ia": 0,
+            "total": 479
+        },
+        "san-luis-obispo": {
+            "ia": 1,
+            "total": 1071
+        },
+        "san-mateo": {
+            "ia": 9,
+            "total": 995
+        },
+        "santa-barbara": {
+            "ia": 0,
+            "total": 303
+        },
+        "santa-clara": {
+            "ia": 52,
+            "total": 4401
+        },
+        "santa-cruz": {
+            "ia": 0,
+            "total": 25
+        },
+        "shasta": {
+            "ia": 0,
+            "total": 275
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 5
+        },
+        "siskiyou": {
+            "ia": 0,
+            "total": 16
+        },
+        "solano": {
+            "ia": 3,
+            "total": 1258
+        },
+        "sonoma": {
+            "ia": 5,
+            "total": 1401
+        },
+        "stanislaus": {
+            "ia": 0,
+            "total": 324
+        },
+        "sutter": {
+            "ia": 0,
+            "total": 112
+        },
+        "tehama": {
+            "ia": 2,
+            "total": 433
+        },
+        "tulare": {
+            "ia": 0,
+            "total": 1150
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 27
+        },
+        "ventura": {
+            "ia": 14,
+            "total": 4201
+        },
+        "yolo": {
+            "ia": 0,
+            "total": 92
+        }
+    },
+    "schools.teacher.teacher": {
+        "null": {
+            "ia": 8,
+            "total": 1911
+        },
+        "alameda": {
+            "ia": 147,
+            "total": 33704
+        },
+        "alpine": {
+            "ia": 0,
+            "total": 923
+        },
+        "amador": {
+            "ia": 0,
+            "total": 442
+        },
+        "butte": {
+            "ia": 7,
+            "total": 6077
+        },
+        "calaveras": {
+            "ia": 0,
+            "total": 190
+        },
+        "colusa": {
+            "ia": 0,
+            "total": 250
+        },
+        "contra-costa": {
+            "ia": 117,
+            "total": 36042
+        },
+        "el-dorado": {
+            "ia": 1,
+            "total": 2370
+        },
+        "fresno": {
+            "ia": 58,
+            "total": 23018
+        },
+        "glenn": {
+            "ia": 1,
+            "total": 251
+        },
+        "humboldt": {
+            "ia": 7,
+            "total": 3364
+        },
+        "imperial": {
+            "ia": 5,
+            "total": 9572
+        },
+        "inyo": {
+            "ia": 1,
+            "total": 468
+        },
+        "kern": {
+            "ia": 26,
+            "total": 22709
+        },
+        "kings": {
+            "ia": 2,
+            "total": 8900
+        },
+        "lake": {
+            "ia": 24,
+            "total": 8076
+        },
+        "lassen": {
+            "ia": 0,
+            "total": 557
+        },
+        "los-angeles": {
+            "ia": 887,
+            "total": 166003
+        },
+        "madera": {
+            "ia": 12,
+            "total": 7427
+        },
+        "marin": {
+            "ia": 22,
+            "total": 8397
+        },
+        "mariposa": {
+            "ia": 0,
+            "total": 213
+        },
+        "mendocino": {
+            "ia": 2,
+            "total": 2765
+        },
+        "merced": {
+            "ia": 11,
+            "total": 7322
+        },
+        "modoc": {
+            "ia": 0,
+            "total": 281
+        },
+        "mono": {
+            "ia": 0,
+            "total": 260
+        },
+        "monterey": {
+            "ia": 9,
+            "total": 10023
+        },
+        "napa": {
+            "ia": 9,
+            "total": 4955
+        },
+        "nevada": {
+            "ia": 6,
+            "total": 2434
+        },
+        "orange": {
+            "ia": 278,
+            "total": 63355
+        },
+        "placer": {
+            "ia": 27,
+            "total": 15831
+        },
+        "plumas": {
+            "ia": 0,
+            "total": 693
+        },
+        "riverside": {
+            "ia": 167,
+            "total": 80195
+        },
+        "sacramento": {
+            "ia": 78,
+            "total": 30626
+        },
+        "san-benito": {
+            "ia": 3,
+            "total": 3092
+        },
+        "san-bernardino": {
+            "ia": 85,
+            "total": 52721
+        },
+        "san-diego": {
+            "ia": 430,
+            "total": 135436
+        },
+        "san-francisco": {
+            "ia": 40,
+            "total": 10217
+        },
+        "san-joaquin": {
+            "ia": 20,
+            "total": 14682
+        },
+        "san-luis-obispo": {
+            "ia": 6,
+            "total": 6715
+        },
+        "san-mateo": {
+            "ia": 50,
+            "total": 17020
+        },
+        "santa-barbara": {
+            "ia": 5,
+            "total": 2725
+        },
+        "santa-clara": {
+            "ia": 163,
+            "total": 29035
+        },
+        "santa-cruz": {
+            "ia": 8,
+            "total": 3531
+        },
+        "shasta": {
+            "ia": 7,
+            "total": 8721
+        },
+        "sierra": {
+            "ia": 0,
+            "total": 332
+        },
+        "siskiyou": {
+            "ia": 3,
+            "total": 1944
+        },
+        "solano": {
+            "ia": 10,
+            "total": 3926
+        },
+        "sonoma": {
+            "ia": 40,
+            "total": 17838
+        },
+        "stanislaus": {
+            "ia": 67,
+            "total": 25182
+        },
+        "sutter": {
+            "ia": 7,
+            "total": 2120
+        },
+        "tehama": {
+            "ia": 4,
+            "total": 6368
+        },
+        "tulare": {
+            "ia": 21,
+            "total": 15899
+        },
+        "tuolumne": {
+            "ia": 0,
+            "total": 1355
+        },
+        "ventura": {
+            "ia": 74,
+            "total": 26698
+        },
+        "yolo": {
+            "ia": 4,
+            "total": 1810
+        }
+    }
+}

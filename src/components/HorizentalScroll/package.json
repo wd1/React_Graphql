@@ -1,0 +1,6 @@
+{
+  "name": "HorizentalScroll",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./HorizentalScroll.js"
+}

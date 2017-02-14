@@ -1,0 +1,288 @@
+{
+	"name": "Industies",
+	"children": [{
+		"name": "Retail and Logestics",
+		"children": [{
+			"name": "Logestics",
+			"children": [{
+				"name": "Logistics and Supply Chain"
+			}, {
+				"name": "Transportation\/Trucking\/Railroad"
+			}, {
+				"name": "Warehousing"
+			}, {
+				"name": "Package\/Freight Delivery"
+			}, {
+				"name": "Packaging and Containers"
+			}, {
+				"name": "Business Supplies and Equipment"
+			}, {
+				"name": "Import and Export"
+			}]
+		}, {
+			"name": "General Consumer Services",
+			"children": [{
+				"name": "Consumer Goods"
+			}, {
+				"name": "Consumer Services"
+			}, {
+				"name": "Wholesale"
+			}, {
+				"name": "Supermarkets"
+			}, {
+				"name": "Retail"
+			}, {
+				"name": "Consumer Electronics"
+			}, {
+				"name": "Wireless"
+			}]
+		}, {
+			"name": "Food",
+			"children": [{
+				"name": "Restaurants"
+			}, {
+				"name": "Food Production"
+			}, {
+				"name": "Wine and Spirits"
+			}, {
+				"name": "Food & Beverages"
+			}]
+		}]
+	}, {
+		"name": "Arts and Fashion",
+		"children": [{
+			"name": "Arts and Crafts"
+		}, {
+			"name": "Apparel & Fashion"
+		}, {
+			"name": "Luxury Goods & Jewelry"
+		}, {
+			"name": "Sporting Goods"
+		}, {
+			"name": "Motion Pictures and Film"
+		}, {
+			"name": "Design"
+		}, {
+			"name": "Graphic Design"
+		}, {
+			"name": "Photography"
+		}, {
+			"name": "Fine Art"
+		}, {
+			"name": "Performing Arts"
+		}, {
+			"name": "Animation"
+		}, {
+			"name": "Music"
+		}]
+	}, {
+		"name": "Engineering",
+		"children": [{
+			"name": "Mechanical \/ Industrial",
+			"children": [{
+				"name": "Mechanical or Industrial Engineering"
+			}, {
+				"name": "Utilities"
+			}, {
+				"name": "Machinery"
+			}, {
+				"name": "Industrial Automation"
+			}, {
+				"name": "Automotive"
+			}]
+		}, {
+			"name": "Energy \/ Chemicals \/ Metallurgy",
+			"children": [{
+				"name": "Oil & Energy"
+			}, {
+				"name": "Mining & Metals"
+			}, {
+				"name": "Chemicals"
+			}, {
+				"name": "Renewables & Environment"
+			}]
+		}, {
+			"name": "Civil and Architecture",
+			"children": [{
+				"name": "Architecture & Planning"
+			}, {
+				"name": "Civil Engineering"
+			}, {
+				"name": "Construction"
+			}, {
+				"name": "Glass, Ceramics & Concrete"
+			}, {
+				"name": "Building Materials"
+			}]
+		}, {
+			"name": "Computer \/ IT \/ Electrical",
+			"children": [{
+				"name": "Semiconductors"
+			}, {
+				"name": "Telecommunications"
+			}, {
+				"name": "Electrical\/Electronic Manufacturing"
+			}, {
+				"name": "Computer Hardware"
+			}, {
+				"name": "Computer & Network Security"
+			}, {
+				"name": "Computer Networking"
+			}, {
+				"name": "Computer Software"
+			}, {
+				"name": "Computer Games"
+			}, {
+				"name": "Internet"
+			}, {
+				"name": "Information Technology and Services"
+			}, {
+				"name": "Information Services"
+			}]
+		}, {
+			"name": "Others",
+			"children": [{
+				"name": "Defense & Space"
+			}, {
+				"name": "Nanotechnology"
+			}, {
+				"name": "Aviation & Aerospace"
+			}, {
+				"name": "Airlines\/Aviation"
+			}, {
+				"name": "Biotechnology"
+			}, {
+				"name": "Farming"
+			}, {
+				"name": "Paper & Forest Products"
+			}, {
+				"name": "Environmental Services"
+			}, {
+				"name": "Textiles"
+			}]
+		}]
+	}, {
+		"name": "Healthcare",
+		"children": [{
+			"name": "Hospital & Health Care"
+		}, {
+			"name": "Medical Practice"
+		}, {
+			"name": "Mental Health Care"
+		}, {
+			"name": "Health, Wellness and Fitness"
+		}, {
+			"name": "Medical Devices"
+		}, {
+			"name": "Pharmaceuticals"
+		}, {
+			"name": "Cosmetics"
+		}, {
+			"name": "Veterinary"
+		}, {
+			"name": "Public Safety"
+		}]
+	}, {
+		"name": "Law \/ Government \/ Public Services",
+		"children": [{
+			"name": "Judiciary"
+		}, {
+			"name": "Political Organization"
+		}, {
+			"name": "Law Practice"
+		}, {
+			"name": "Legal Services"
+		}, {
+			"name": "Legislative Office"
+		}, {
+			"name": "Alternative Dispute Resolution"
+		}, {
+			"name": "Law Enforcement"
+		}, {
+			"name": "Security and Investigations"
+		}, {
+			"name": "Military"
+		}, {
+			"name": "Government Relations"
+		}, {
+			"name": "Government Administration"
+		}, {
+			"name": "Libraries"
+		}]
+	}, {
+		"name": "Finance \/ Banking \/ Insurance",
+		"children": [{
+			"name": "Financial Services"
+		}, {
+			"name": "Accounting"
+		}, {
+			"name": "Investment Management"
+		}, {
+			"name": "Investment Banking"
+		}, {
+			"name": "Capital Markets"
+		}, {
+			"name": "Fund-Raising"
+		}, {
+			"name": "Banking"
+		}, {
+			"name": "Insurance"
+		}]
+	}, {
+		"name": "Management and HR",
+		"children": [{
+			"name": "Human Resources"
+		}, {
+			"name": "Nonprofit Organization Management"
+		}, {
+			"name": "Management Consulting"
+		}, {
+			"name": "Executive Office"
+		}, {
+			"name": "Staffing and Recruiting"
+		}]
+	}, {
+		"name": "Education",
+		"children": [{
+			"name": "Higher Education"
+		}, {
+			"name": "E-Learning"
+		}, {
+			"name": "Primary\/Secondary Education"
+		}, {
+			"name": "Education Management"
+		}, {
+			"name": "Program Development"
+		}]
+	}, {
+		"name": "Media \/ Publishing",
+		"children": [{
+			"name": "Entertainment"
+		}, {
+			"name": "Marketing and Advertising"
+		}, {
+			"name": "Broadcast Media"
+		}, {
+			"name": "Media Production"
+		}, {
+			"name": "Translation and Localization"
+		}, {
+			"name": "Writing and Editing"
+		}, {
+			"name": "Newspapers"
+		}, {
+			"name": "Printing"
+		}, {
+			"name": "Publishing"
+		}, {
+			"name": "Online Media"
+		}]
+	}, {
+		"name": "Real Estate Industry",
+		"children": [{
+			"name": "Real Estate"
+		}, {
+			"name": "Commercial Real Estate"
+		}]
+	}]
+}

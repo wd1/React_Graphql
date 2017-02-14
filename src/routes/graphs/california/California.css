@@ -1,0 +1,93 @@
+/* Since we set elements class through D3 and not React, we have to use global
+ class names and selectors for now */
+:global{
+  .title {
+    padding-left: 100px;
+  }
+
+  #doughnut {
+    float: left;
+    width: 700px;
+    display:inline;
+  }
+
+  #map {
+    float: left;
+    width: 400px;
+    height: 600px;
+    display:inline;
+  }
+
+  #sequence {
+    width: 1050px;
+    height: 70px;
+  }
+
+  #sequence text, {
+    font-weight: 600;
+    fill: #fff;
+  }
+
+  #trail > g > text {
+    text-transform: capitalize;
+  }
+
+  #endlabel, #trail > g > text {
+    font-size: 1.3em;
+  }
+
+  #doughnut {
+    position: relative;
+  }
+
+  #doughnut path {
+    stroke: #fff;
+  }
+
+  #explanation {
+    position: absolute;
+    top: 180px;
+    left: 250px;
+    width: 240px;
+    text-align: center;
+    color: #666;
+    z-index: -1;
+    font-size: 1.2em;
+  }
+
+  #center-name, #center-total, #center-ia {
+    font-size: 2.0em;
+    text-transform: capitalize;
+  }
+
+  .subunit {
+    stroke: white;
+    stroke-width: 1px;
+  }
+
+  .subunit:hover {
+    opacity: 0.7;
+    fill: lightyellow;
+
+  }
+
+  .exterior-boundary {
+    fill: none;
+    stroke: black;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+  }
+
+  div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 180px;
+    padding: 2px;
+    font: 16px sans-serif;
+    color: white;
+    background: black;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+}

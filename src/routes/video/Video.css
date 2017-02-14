@@ -1,0 +1,34 @@
+:global {
+  ul.video-section-selector > li {
+    font-size: 150%;
+  }
+
+  ul.video-section-selector > li > a {
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+
+  ul.video-section-selector > li > a > span {
+    margin-left: 10px;
+  }
+
+  ul.video-section-selector > li > ul.dropdown-menu {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .activeSegment > a,
+  .activeSegment > a:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+    background-color: #337ab7 !important;
+    outline: 0 !important;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
