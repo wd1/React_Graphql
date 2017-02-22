@@ -14,7 +14,7 @@ import Patents from './Patents';
 const title = 'Patents';
 
 export default {
-  path: '/explore/patents',
+  path: '/patents',
   action() {
     return {
       title,

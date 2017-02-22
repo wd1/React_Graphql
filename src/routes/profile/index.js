@@ -21,6 +21,7 @@ export default {
   async action({ store }) {
     const { auth } = store.getState();
     if (!auth.user.id) {
+      // this is only for user experience, we can not rely on auth.user.id
       return { redirect: '/login' };
     }
 
@@ -32,12 +33,13 @@ export default {
       },
       body: JSON.stringify({
         query: '{me{email}}',
-        id: auth.user.id,
       }),
       credentials: 'include',
     });
     const { data } = await resp.json();
-    if (!data || !data.me) throw new Error('Failed to load.');
+
+    // redirect to '/' if no result is returned
+    if (!data || !data.me) return { redirect: '/' };
 
     return {
       title,

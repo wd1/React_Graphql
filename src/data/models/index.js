@@ -10,10 +10,11 @@
 import sequelize from '../sequelize';
 import User from './User';
 import Subscription from './Subscription';
+import Donation from './Donation';
 
 function sync(...args) {
   return sequelize.sync(...args);
 }
 
 export default { sync };
-export { User, Subscription };
+export { User, Subscription, Donation };

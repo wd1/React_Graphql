@@ -1,32 +1,28 @@
-:global{
-  .subunit {
-    stroke: white;
-    stroke-width: 1px;
+:global {
+  .state {
+    fill: #ddd;
   }
 
-  .subunit:hover {
-    opacity: 0.7;
-    fill: lightyellow;
-
-  }
-
-  .exterior-boundary {
-    fill: none;
-    stroke: black;
-    stroke-linejoin: round;
-    stroke-width: 2px;
-  }
-
-  .tooltip {
-    position: absolute;
-    text-align: center;
-    width: 180px;
-    padding: 2px;
-    font: 16px sans-serif;
-    color: white;
-    background: black;
-    border: 0px;
-    border-radius: 8px;
+  .state-hidden {
     pointer-events: none;
+  }
+
+  .border {
+    fill: none;
+    stroke: #fff;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+
+  .bubble {
+    fill: #e89600;
+    fill-opacity: 0.5;
+    stroke: #fff;
+    stroke-width: 0.5;
+    pointer-events: none;
+  }
+
+  #mapText {
+    float: right;
   }
 }

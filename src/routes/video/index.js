@@ -9,47 +9,16 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Video from './Video';
+import VideoSlide from '../../components/VideoSlide';
 
 const title = 'Introduction Video';
 
 export default {
   path: '/video',
   action() {
-    const props = {
-      videoId: 'o2VdQvzWTc0',
-      duration: (58 * 60) + 56,
-      segments: [
-        {
-          title: 'Intro to IACP - Why it matters - Creating a brand',
-          start: 0,
-        },
-        {
-          title: 'What we do, What we don\'t do - Our non-profit status',
-          start: (17 * 60) + 30,
-        },
-        {
-          title: 'Technology update - Data obtained so far',
-          start: (22 * 60) + 30,
-        },
-        {
-          title: 'Sharing Life Stories',
-          start: (36 * 60) + 47,
-        },
-        {
-          title: 'Creating a multi-generational platform - Our roadmap - The teams we need',
-          start: (40 * 60) + 20,
-        },
-        {
-          title: 'Our Choices as a community - Conclusion',
-          start: (50 * 60) + 45,
-        },
-      ],
-    };
-
     return {
       title,
-      component: <Layout><Video {...props} /></Layout>,
+      component: <Layout><VideoSlide /></Layout>,
     };
   },
 };

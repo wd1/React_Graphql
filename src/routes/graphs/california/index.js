@@ -14,7 +14,7 @@ import California from './California';
 const title = 'California';
 
 export default {
-  path: '/explore/california',
+  path: '/california',
   action() {
     return {
       title,

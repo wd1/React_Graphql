@@ -60,14 +60,17 @@ const User = Model.define('User', {
     generateHash(password) {
       return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
     },
+    generateResetPasswordToken() {
+      return crypto.randomBytes(20).toString('hex');
+    },
   },
 
   instanceMethods: {
     comparePassword(password) {
       return bcrypt.compareSync(password, this.password);
     },
-    generateResetPasswordToken() {
-      return crypto.randomBytes(20).toString('hex');
+    isAdmin() {
+      return this.admin;
     },
   },
 

@@ -13,7 +13,7 @@ import React, {
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Stories.css';
 import Gallery from '../../components/Gallery';
-import data from './links.json';
+import data from '../../public/stories-gallery/links.json';
 
 class Content extends React.Component {
   static propTypes = {

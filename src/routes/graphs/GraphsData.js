@@ -29,11 +29,11 @@ const GraphsData = {
     image: '/graphs-data/attorneys/attorneys.png',
     link: '/explore/attorneys',
   },
-  physicians: {
+  physiciansCalifornia: {
     title: 'California Physicians',
     description: 'Location, Classification, Specialization, ...',
-    image: '/graphs-data/physicians/physicians.png',
-    link: '/explore/physicians',
+    image: '/graphs-data/physicians-california/physicians.png',
+    link: '/explore/physicians-california',
   },
   patents: {
     title: 'Iranian-American Patent Holders',

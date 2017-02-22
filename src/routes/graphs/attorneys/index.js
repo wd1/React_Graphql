@@ -14,7 +14,7 @@ import Attorneys from './Attorneys';
 const title = 'Attorneys';
 
 export default {
-  path: '/explore/attorneys',
+  path: '/attorneys',
   action() {
     return {
       title,

@@ -25,7 +25,7 @@ class GraphsListPage extends React.Component {
   render() {
     const graphs = [
       GraphsData.scholars, GraphsData.california,
-      GraphsData.attorneys, GraphsData.physicians,
+      GraphsData.attorneys, GraphsData.physiciansCalifornia,
       GraphsData.patents, GraphsData.linkedin,
     ];
     const futures = [

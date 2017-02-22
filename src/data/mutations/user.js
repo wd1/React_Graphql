@@ -114,7 +114,7 @@ const forgot = {
     }
 
     if (errors.length === 0) {
-      resetPasswordToken = user.generateResetPasswordToken();
+      resetPasswordToken = User.generateResetPasswordToken();
       user.resetPasswordToken = resetPasswordToken;
       user.resetPasswordExpires = Date.now() + (24 * 60 * 60 * 1000); // 24 hours
       await user.save();

@@ -1,100 +1,228 @@
 import d3 from 'd3';
 import * as topojson from 'topojson';
 
-var BaseUrl = '/graphs-data/physicians/'
-var numberFormat = d3.format(",.0f");
+const BaseUrl = '/graphs-data/physicians/';
+const numberFormat = d3.format(',.0f');
 
-var renderMap = function(data) {
-  var width = 500;
-  var height = 450;
+const renderMap = (inputData, totalCount, usTopology) => {
+  const data = inputData;
 
-  var projection = d3.geo.mercator()
-    .scale(1000 * 2)
-    .center([-120, 37.5])
-    .translate([width / 2, height / 2]);
+  const width = 960;
+  const height = 640;
+  var centered;
+  const textBox = d3.select('#mapText');
 
-  var path = d3.geo.path()
-    .projection(projection);
+  const path = d3.geo.path()
+      .projection(null);
 
-  var svg = d3.select("#map").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+  const radius = d3.scale.sqrt()
+    .domain([0, 1e3])
+    .range([0, 30]);
 
-  var getColor = function(d) {
-    let value = Math.log(d.properties.value + 1) / 7;
-    let l = 0.95 - Math.min(value, 1) * 0.7;
-    return d3.hsl(330, .67, l);
+  const getRadius = (d) => {
+    const stateCode = d.properties.abb;
+    const population = inputData.state[stateCode] || 0;
+    d.population = population;
+    return radius(population);
+  };
+
+  const color = d3.scale.log().clamp(1)
+    .domain([0.1, 1e3])
+    .range([0.1, 0.9]);
+
+  const getColor = (d) => {
+    const countyCode = d.id;
+    const population = inputData.county[countyCode] || 0;
+    d.population = population;
+    const l = color(population);
+    return d3.hsl(330, 0.67, l);
+  };
+
+  const mouseover = (d) => {
+    textBox.text(`${d.properties.name}: ${numberFormat(d.population)}`);
   }
 
-  // Draw main map
-  d3.json(BaseUrl + "map-california.json", function(error, ca) {
-
-    // prepare data
-    ca.objects.subunits.geometries.forEach(function(o) {
-      let name = o.properties.name;
-      o.properties.value = data[name] || 0;
-    });
-
-    svg.append("path")
-      .datum(topojson.feature(ca, ca.objects.subunits))
-      .attr("class", "land")
-      .attr("d", path);
-
-    //bind feature data to the map
-    svg.selectAll(".subunit")
-      .data(topojson.feature(ca, ca.objects.subunits).features)
-      .enter().append("path")
-      .attr("class", function(d) {return "subunit " + d.properties.name;})
-      .attr("d", path)
-      .attr("fill", function(d) {return getColor(d);})
-      .on("mouseover", function(d) { //tooltip
-        div.transition()
-          .duration(200)
-          .style("opacity", .9);
-        div.html(d.properties.fullName + ': ' + numberFormat(d.properties.value) + ' Physicians')
-          .style("left", (d3.event.pageX) + 30 + "px")
-          .style("top", (d3.event.pageY - 50) + "px");
-      })
-      .on("mouseout", function(d) {
-        div.transition()
-          .duration(500)
-          .style("opacity", 0.0);
-      });
-
-    //exterior border
-    svg.append("path")
-      .datum(topojson.mesh(ca, ca.objects.subunits, function(a, b) {
-        return a === b;
-      }))
-      .attr("d", path)
-      .attr("class", "exterior-boundary");
-
-    //tooltop declaration
-    var div = d3.select("#tooltip-container").append("div")
-      .attr("class", "tooltip")
-      .style("opacity", 0);
-
-  });
-}
-
-var renderClassification = function(data) {
-  data = Object.keys(data).map(function(key){
-    var o = {
-      classification: key,
-      count: data[key],
+  const mouseout = () => {
+    if (centered) {
+      textBox.text(`${centered.properties.name}: ${numberFormat(centered.population)}`);
+    } else {
+      textBox.text(`Total: ${numberFormat(totalCount)}`);
     }
-    return o;
-  });
-  data.sort(function(a,b) {return (b.count - a.count);} );
-  data = data.filter(function(o){return o.classification})
+  }
+
+  const svg = d3.select('#map')
+    .append('div')
+    .attr('id', 'svgContainer')
+    .append('svg')
+    .attr('viewBox', `0 0 ${width} ${height}`)
+    .attr('preserveAspectRatio', 'xMinYMin');
+
+  const g = svg.append('g');
+
+  const onClik = (d) => {
+    let x;
+    let y;
+    let k;
+
+    if (!d || centered === d) {
+      x = width / 2;
+      y = height / 2;
+      k = 1;
+      centered = null;
+    } else {
+      const centroid = path.centroid(d);
+      x = centroid[0];
+      y = centroid[1];
+      k = 2.5;
+      centered = d;
+    }
+
+    g.selectAll('path')
+      .classed('active', (dd) => (centered && (dd === centered)));
+
+    g.selectAll('path')
+      .classed('active', (dd) => (centered && (dd === centered)));
 
 
-  var chartData = [{
-    x: data.map(function(o){ return o.classification }),
-    y: data.map(function(o){ return o.count }),
-    type: "bar",
+    g.transition()
+      .duration(750)
+      .attr('transform', `translate(${width / 2}, ${height / 2})scale(${k})translate(${-x}, ${-y})`)
+      .style('stroke-width', `${1.5 / k}px`);
+
+    d3.selectAll('.state')
+      .transition()
+      .duration(750)
+      .style('opacity', (dd) => ((centered === dd) ? 0 : 1))
+      .attr('class', (dd) => ((centered === dd) ? 'state state-hidden' : 'state'));
+
+    if (centered) {
+      d3.selectAll('.bubble')
+        .transition()
+        .duration(750)
+        .style('opacity', (dd) => ((dd.id === centered.id) ? 0 : 1));
+    } else {
+      d3.selectAll('.bubble')
+        .transition()
+        .duration(750)
+        .style('opacity', 1);
+    }
+  };
+
+  // Counties
+  g.append('g')
+    .attr('id', 'counties')
+    .selectAll('path')
+    .data(topojson.feature(usTopology, usTopology.objects.counties).features)
+    .enter()
+    .append('path')
+    .attr('d', path)
+    .attr('fill', getColor)
+    .attr('class', 'county')
+    .on('click', () => (onClik()))
+    .on('mouseover', mouseover)
+    .on('mouseout', mouseout);
+
+  // States
+  g.append('g')
+    .attr('id', 'states')
+    .selectAll('path')
+    .data(topojson.feature(usTopology, usTopology.objects.states).features)
+    .enter()
+    .append('path')
+    .attr('d', path)
+    .attr('class', 'state')
+    .attr('id', (d) => `state-${d.id}`)
+    .attr('r', getRadius)
+    .on('click', onClik)
+    .on('mouseover', mouseover)
+    .on('mouseout', mouseout);
+
+  // States Boarder
+  g.append('g')
+    .append('path')
+    .datum(topojson.mesh(usTopology, usTopology.objects.states, (a, b) => (a !== b)))
+    .attr('class', 'border border--state')
+    .attr('d', path);
+
+  // Bubbles
+  g.append('g')
+    .attr('id', 'bubbles')
+    .selectAll('circle')
+    .data(topojson.feature(usTopology, usTopology.objects.states).features)
+    .enter()
+    .append('circle')
+    .attr('class', 'bubble')
+    .attr('transform', (d) => `translate(${path.centroid(d)})`)
+    .attr('r', getRadius);
+
+
+  // Graph 2
+  const svg2 = d3.select('#map2')
+    .append('div')
+    .attr('id', 'svgContainer2')
+    .append('svg')
+    .attr('viewBox', `0 0 ${width} ${height}`)
+    .attr('preserveAspectRatio', 'xMinYMin');
+
+  const g2 = svg2.append('g');
+  g2.append('g')
+    .attr('id', 'counties2')
+    .selectAll('path')
+    .data(topojson.feature(usTopology, usTopology.objects.counties).features)
+    .enter()
+    .append('path')
+    .attr('d', path)
+    .attr('fill', getColor)
+    .attr('class', 'county2');
+};
+
+const renderType = (inputData) => {
+  let data = Object.keys(inputData).map((key) => ({
+    type: key,
+    count: inputData[key],
+  }));
+  data.sort((a, b) => (b.count - a.count));
+  data = data.filter((o) => o.type);
+
+  const chartData = [{
+    x: data.map(o => o.type),
+    y: data.map(o => o.count),
+    type: 'bar',
   }];
-  var layout = {
+  const layout = {
+    margin: {
+      b: 150,
+      r: 100,
+      t: 20,
+    },
+    yaxis: {
+      title: 'Type of Physicians',
+    },
+    xaxis: {
+      tickangle: 45,
+      tickfont: {
+        size: 18,
+      },
+    },
+  };
+  Plotly.newPlot('type', chartData, layout, { displayModeBar: false });
+};
+
+const renderClassification = (inputData) => {
+  let data = Object.keys(inputData).map((key) => ({
+    classification: key,
+    count: inputData[key],
+  }));
+  data.sort((a, b) => (b.count - a.count));
+  data = data.filter((o) => o.classification);
+
+
+  const chartData = [{
+    x: data.map(o => o.classification),
+    y: data.map(o => o.count),
+    type: 'bar',
+  }];
+  const layout = {
     margin: {
       b: 150,
       r: 100,
@@ -110,32 +238,28 @@ var renderClassification = function(data) {
       },
     },
   };
-  Plotly.newPlot('classification', chartData, layout,  {displayModeBar: false});
+  Plotly.newPlot('classification', chartData, layout, { displayModeBar: false });
+};
 
-}
+const renderSpecialization = (inputData) => {
+  const noSpecialiation = inputData[''];
+  const text = `* There are ${numberFormat(noSpecialiation)} physicians with no specialization`;
+  d3.select('#specialization-note').text(text);
 
-var renderSpecialization = function(data) {
-  var noSpecialiation = data[''];
-  var text = '* There are ' + numberFormat(noSpecialiation) + ' physicians with no specialization'
-  d3.select("#specialization-note").text(text);
-
-  data = Object.keys(data).map(function(key){
-    var o = {
-      specialization: key,
-      count: data[key],
-    }
-    return o;
-  });
-  data.sort(function(a,b) {return (b.count - a.count);} );
-  data = data.filter(function(o){return o.specialization})
+  let data = Object.keys(inputData).map(key => ({
+    specialization: key,
+    count: inputData[key],
+  }));
+  data.sort((a, b) => (b.count - a.count));
+  data = data.filter((o) => o.specialization);
 
 
-  var chartData = [{
-    x: data.map(function(o){ return o.specialization }),
-    y: data.map(function(o){ return o.count }),
-    type: "bar",
+  const chartData = [{
+    x: data.map((o) => o.specialization),
+    y: data.map((o) => o.count),
+    type: 'bar',
   }];
-  var layout = {
+  const layout = {
     margin: {
       b: 150,
       r: 100,
@@ -151,54 +275,53 @@ var renderSpecialization = function(data) {
       },
     },
   };
-  Plotly.newPlot('specialization', chartData, layout,  {displayModeBar: false});
-}
+  Plotly.newPlot('specialization', chartData, layout, { displayModeBar: false });
+};
 
 
-var renderGender = function(data) {
-  var genderTranslation = {
-    'M': 'Male',
-    'F': 'Female',
+const renderGender = (inputData) => {
+  const genderTranslation = {
+    M: 'Male',
+    F: 'Female',
   };
 
-  data = Object.keys(data).map(function(gender){
-    return {
-      gender: genderTranslation[gender],
-      count: data[gender],
-    };
-  });
+  const data = Object.keys(inputData).map(gender => ({
+    gender: genderTranslation[gender],
+    count: inputData[gender],
+  }));
 
-  var chartData = [{
-    labels: data.map(function(o){ return o.gender; }),
-    values: data.map(function(o){ return o.count}),
-    type: 'pie'
+  const chartData = [{
+    labels: data.map((o) => o.gender),
+    values: data.map((o) => o.count),
+    type: 'pie',
   }];
 
-  var layout = {
+  const layout = {
     width: 500,
     height: 500,
   };
-  Plotly.newPlot('gender', chartData, layout, {displayModeBar: false});
-}
+  Plotly.newPlot('gender', chartData, layout, { displayModeBar: false });
+};
 
-var renderTexts = function(data) {
-  var date = new Date(data.lastUpdate)
-  var dateFormat = d3.time.format("%x");
-  d3.select("#last-update").text(dateFormat(date));
+const renderTexts = (data) => {
+  const date = new Date(data.lastUpdate);
+  const dateFormat = d3.time.format('%x');
+  d3.select('#last-update').text(dateFormat(date));
 
-  d3.select("#count").text(numberFormat(data.count));
-}
+  d3.select('#count').text(numberFormat(data.count));
+};
 
-
-var DrawGraph = function() {
-  d3.json(BaseUrl + 'data.json', (data) => {
-    renderMap(data.location);
+const DrawGraph = () => {
+  d3.json(`${BaseUrl}data.json`, (data) => {
+  d3.json(`${BaseUrl}us-counties.json`, (usTopology) => {
+    renderMap(data.location, data.count, usTopology);
+    renderType(data.type);
     renderClassification(data.classification);
     renderSpecialization(data.specialization);
     renderGender(data.gender);
     renderTexts(data);
   });
+  });
+};
 
-}
-
-export {DrawGraph};
+export default DrawGraph;

@@ -1,4 +1,4 @@
-/**
+/**  -*- mode: react; -*-
  * React Starter Kit (https://www.reactstarterkit.com/)
  *
  * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
@@ -9,7 +9,7 @@
 
 import DataType from 'sequelize';
 import Model from '../sequelize';
-import {baseUrl} from '../../config';
+import { baseUrl } from '../../config';
 
 const Subscription = Model.define('Subscription', {
 

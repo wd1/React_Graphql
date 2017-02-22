@@ -26,12 +26,12 @@ import errorPageStyle from './routes/error/ErrorPage.css';
 import passport from './core/passport';
 import models from './data/models';
 import schema from './data/schema';
-import { handleRequest as chargeDonation } from './routes/donate/Charge';
 import routes from './routes';
 import assets from './assets'; // eslint-disable-line import/no-unresolved
 import configureStore from './store/configureStore';
 import { port } from './config';
 import { auth } from './secrets';
+import fetch from './core/fetch';
 
 const app = express();
 
@@ -108,19 +108,45 @@ app.use('/graphql', expressGraphQL(req => ({
   pretty: process.env.NODE_ENV !== 'production',
 })));
 
-// Donation Charge Backend (temp)
-app.post('/api/charge', chargeDonation);
-
 //
 // Register server-side rendering middleware
 // -----------------------------------------------------------------------------
 app.get('*', async (req, res, next) => {
   try {
+    let user;
+    if (req.user) {
+      // we're in serverside, i'm not sure this is a good idea to fetch it from graphql or should be queriying directly
+      const meResp = await fetch('/graphql', {
+        method: 'post',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          query: '{me{id,email,admin}}',
+          id: req.user.id,
+        }),
+        credentials: 'include',
+      });
+
+      if (meResp.status !== 200) throw new Error(meResp.statusText);
+      const meData = await meResp.json();
+      if (meData.data) {
+        user = meData.data.me;
+      }
+    }
+
     const store = configureStore({
       auth: {
         isFetching: false,
-        user: req.user || {},
+        user: user || req.user || {},
         token: req.cookies.id_token || null,
+      },
+      donate: {
+        isFetching: false,
+        publishableKey: false,
+        success: false,
+        errors: [],
       },
     }, {
       cookie: req.headers.cookie,

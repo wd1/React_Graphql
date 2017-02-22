@@ -45,12 +45,13 @@ class Header extends React.Component {
           </Nav>
           <hr className={s.divider} />
           <Nav pullRight>
-            {/*
-            {!auth.user.id && <NavItem eventKey={5} href="/login">Login</NavItem>}
-            {auth.user.id && <NavItem eventKey={5} href="/profile">Profile</NavItem>}
+            {/* {!auth.user.id && <NavItem eventKey={5} href="/login">Login</NavItem>} */}
+            {/* profile is not ready yet */}
+            {/* {auth.user.id && <NavItem eventKey={5} href="/profile">Profile</NavItem>} */}
+            {/* auth.user.admin is working, but we should not rely on it,
+                because it could be manipulated on serverside */}
             {auth.user.id && auth.user.admin && <NavItem eventKey={6} href="/admin">Admin</NavItem>}
             {auth.user.id && <LogoutLink eventKey={7}>Logout</LogoutLink>}
-            */}
             <NavItem className={s.donate} eventKey={8} href="/donate">Donate</NavItem>
           </Nav>
         </Navbar.Collapse>

@@ -16,9 +16,9 @@ import {
 // import queryString from 'query-string';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Home.css';
-import Presentation from '../../components/Presentation';
+import VideoSlide from '../../components/VideoSlide';
 import GalleryHorizental from '../../components/GalleryHorizental';
-import storiesData from '../stories/links.json';
+import storiesData from '../../public/stories-gallery/links.json';
 import GraphsData from '../graphs/GraphsData';
 import GraphThumbnail from '../../components/GraphThumbnail';
 import Subscription from '../../components/Subscription';
@@ -63,7 +63,7 @@ class Home extends React.Component {
   renderGraphGalary() {
     const graphs = [
       GraphsData.scholars, GraphsData.california,
-      GraphsData.attorneys, GraphsData.physicians,
+      GraphsData.attorneys, GraphsData.physiciansCalifornia,
       GraphsData.patents, GraphsData.linkedin,
     ];
     return graphs.map((graph, index) => (
@@ -81,7 +81,7 @@ class Home extends React.Component {
         {/* Presentation */}
         <Row>
           <Col xs={12} >
-            <Presentation />
+            <VideoSlide />
           </Col>
         </Row>
 

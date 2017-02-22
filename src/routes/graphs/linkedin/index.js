@@ -15,7 +15,7 @@ const title = 'Linkedin';
 
 export default {
 
-  path: '/explore/linkedin',
+  path: '/linkedin',
 
   action() {
     return {

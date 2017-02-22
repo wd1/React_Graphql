@@ -1,4 +1,4 @@
-/**
+/**  -*- mode: react; -*-
  * React Starter Kit (https://www.reactstarterkit.com/)
  *
  * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
@@ -11,6 +11,7 @@ import {
   GraphQLObjectType as ObjectType,
   GraphQLID as ID,
   GraphQLString as StringType,
+  GraphQLBoolean as BooleanType,
   GraphQLNonNull as NonNull,
 } from 'graphql';
 
@@ -19,6 +20,7 @@ const UserType = new ObjectType({
   fields: {
     id: { type: new NonNull(ID) },
     email: { type: StringType },
+    admin: { type: BooleanType },
     createdAt: { type: StringType },
   },
 });

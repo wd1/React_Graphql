@@ -14,7 +14,7 @@ import GraphsListPage from './List';
 const title = 'Explore Data';
 
 export default {
-  path: '/explore',
+  path: '/',
   action() {
     return {
       title,

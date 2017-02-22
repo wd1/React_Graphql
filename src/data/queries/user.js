@@ -64,11 +64,4 @@ const login = {
   },
 };
 
-const me = {
-  type: UserType,
-  resolve({ request }) {
-    return User.findById(request.body.id);
-  },
-};
-
-export default { login, me };
+export default { login };

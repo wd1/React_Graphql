@@ -1,0 +1,1 @@
+15 8 * * * python3 /vagrant/iacp_website/scripts/huffingtonpost/fetch.py >/dev/null 2>&1

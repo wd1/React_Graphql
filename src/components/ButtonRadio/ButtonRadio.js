@@ -89,7 +89,7 @@ class ButtonRadio extends React.Component {
           <FormControl
             type="text"
             onChange={this.onChangeOther}
-            value={this.state.value}
+            value={this.state.value || 0}
           />
           <InputGroup.Addon>.00</InputGroup.Addon>
         </InputGroup>

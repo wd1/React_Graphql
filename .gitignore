@@ -194,3 +194,5 @@ ncp-debug.log
 
 # Secrets
 src/secrets.js
+
+src/public/stories-gallery

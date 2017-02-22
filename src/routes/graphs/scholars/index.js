@@ -14,7 +14,7 @@ import Scholars from './Scholars';
 const title = 'Scholars';
 
 export default {
-  path: '/explore/scholars',
+  path: '/scholars',
   action() {
     return {
       title,

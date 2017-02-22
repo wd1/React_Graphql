@@ -9,6 +9,8 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
+import fetch from '../../core/fetch';
+import Admin from './Admin';
 
 const title = 'Admin Page';
 
@@ -19,21 +21,60 @@ export default {
   async action({ store }) {
     const { auth } = store.getState();
     if (!auth.user.id) {
+      // it's only a helper, we do not rely on store information
       return { redirect: '/login' };
     }
 
-    // store.auth.user doesn't have admin field!!!!
-    /* if (!auth.user.admin) {
+    if (!auth.user.admin) {
+      // it's only a helper, we do not rely on store information
       return { redirect: '/' };
-    }*/
+    }
 
-    const Admin = await new Promise((resolve) => {
-      require.ensure([], (require) => resolve(require('./Admin').default), 'admin');
+    const subscriptionsResp = await fetch('/graphql', {
+      method: 'post',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        query: `{
+          admin {
+            subscriptions {
+              email
+              active
+            }
+            donations {
+              amount
+              email
+              fullName
+              zipCode
+              status
+              updatedAt
+            }
+            errors {
+              key
+              message
+            }
+          }
+        }`,
+      }),
+      credentials: 'include',
     });
+
+    if (subscriptionsResp.status !== 200) throw new Error(subscriptionsResp.statusText);
+    const SubscriptionsData = await subscriptionsResp.json();
+    if (!SubscriptionsData.data) return { redirect: '/' };
+
+    const admin = SubscriptionsData.data.admin;
+
+    /* const Admin = await new Promise((resolve) => {
+     *   require.ensure([], (require) => resolve(require('./Admin').default), 'admin');
+     * });
+     */
     return {
       title,
       chunk: 'admin',
-      component: <Layout><Admin /></Layout>,
+      component: <Layout><Admin admin={admin} /></Layout>,
     };
   },
 

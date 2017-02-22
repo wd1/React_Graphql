@@ -14,7 +14,7 @@ import Physicians from './Physicians';
 const title = 'Physicians';
 
 export default {
-  path: '/explore/physicians',
+  path: '/physicians',
   action() {
     return {
       title,

@@ -1,0 +1,31 @@
+:global {
+  .subunit {
+    stroke: white;
+    stroke-width: 1px;
+  }
+
+  .subunit:hover {
+    opacity: 0.7;
+    fill: lightyellow;
+  }
+
+  .exterior-boundary {
+    fill: none;
+    stroke: black;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+  }
+
+  .tooltip {
+    position: absolute;
+    text-align: center;
+    width: 180px;
+    padding: 2px;
+    font: 16px sans-serif;
+    color: white;
+    background: black;
+    border: 0;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+}

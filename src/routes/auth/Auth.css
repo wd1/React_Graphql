@@ -18,13 +18,3 @@
   padding: 0 0 40px;
   max-width: 380px;
 }
-
-/* #TODO these should be moved to a correct bootstrap theme */
-:global {
-  .nav-tabs.nav-justified>li>a {
-    border-radius: 0px;
-  }
-  .alert {
-    border-radius: 0px;
-  }
-}

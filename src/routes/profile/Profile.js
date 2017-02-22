@@ -19,7 +19,7 @@ class Profile extends React.Component {
     title: PropTypes.string.isRequired,
     me: PropTypes.shape({
       email: PropTypes.string.isRequired,
-    }).isRequired,
+    }),
   };
 
   render() {

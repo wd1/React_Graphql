@@ -29,11 +29,11 @@ function signupRequest() {
   };
 }
 
-function signupSuccess(id, token) {
+function signupSuccess(user, token) {
   return {
     type: SIGNUP_SUCCESS,
     payload: {
-      user: { id },
+      user,
       token,
     },
   };
@@ -67,7 +67,7 @@ export function signup(email, password) {
       if (errors.length > 0) {
         dispatch(signupFailure(errors));
       } else {
-        dispatch(signupSuccess(user.id, token));
+        dispatch(signupSuccess(user, token));
 
         if (process.env.BROWSER) {
           document.cookie = `id_token=${token};path=/;max-age=${maxAge}`;
@@ -96,11 +96,11 @@ function loginRequest() {
   };
 }
 
-function loginSuccess(id, token) {
+function loginSuccess(user, token) {
   return {
     type: LOGIN_SUCCESS,
     payload: {
-      user: { id },
+      user,
       token,
     },
   };
@@ -123,7 +123,7 @@ export function login(email, password) {
       const { data } = await graphqlRequest(`
         {
           login(email: "${email}", password: "${password}") {
-            data { user { id }, token }
+            data { user { id, email, admin }, token }
             errors { key, message }
           }
         }
@@ -135,13 +135,19 @@ export function login(email, password) {
         dispatch(loginFailure(errors));
       } else {
         // this should be commented out as it cause a lot not useful logs
-        dispatch(loginSuccess(user.id, token));
+        dispatch(loginSuccess(user, token));
 
         if (process.env.BROWSER) {
           document.cookie = `id_token=${token};path=/;max-age=${maxAge}`;
         }
 
-        history.push('/profile');
+        if (user.admin) {
+          history.push('/admin');
+        } else {
+          /* profile is not ready yet.*/
+          /* history.push('/profile');*/
+          history.push('/');
+        }
       }
     } catch (e) {
       const errors = [

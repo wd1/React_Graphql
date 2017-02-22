@@ -14,6 +14,7 @@ import {
 
 // Queries
 import userQuery from './queries/user';
+import meQuery from './queries/me';
 import content from './queries/content';
 import subscribeQuery from './queries/subscription';
 import adminQuery from './queries/admin';
@@ -21,12 +22,14 @@ import adminQuery from './queries/admin';
 // Mutations
 import userMutation from './mutations/user';
 import subscribeMutation from './mutations/subscription';
+import donateMutation from './mutations/donate';
 
 const schema = new Schema({
   query: new ObjectType({
     name: 'Query',
     fields: {
       ...userQuery,
+      ...meQuery,
       ...subscribeQuery,
       ...adminQuery,
       content,
@@ -37,6 +40,7 @@ const schema = new Schema({
     fields: {
       ...userMutation,
       ...subscribeMutation,
+      ...donateMutation,
     },
   }),
 });

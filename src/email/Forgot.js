@@ -3,7 +3,7 @@ import sendEmail from './Email';
 function sendForgotEmail(recipient, resetPasswordToken) {
   const subject = 'Reset Password at IACP';
   const html = `
-<h2>Hey There, </h2>
+<h4>Hi,</h4>
 
 <p>
 Someone requested a new password for your IACP account.

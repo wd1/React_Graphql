@@ -17,6 +17,17 @@
  * Base styles
  * ========================================================================== */
 
+/* #TODO these should be moved to a correct bootstrap theme */
+:global {
+  .nav-tabs.nav-justified>li>a,
+  .nav-tabs>li>a {
+    border-radius: 0px;
+  }
+  .alert {
+    border-radius: 0px;
+  }
+}
+
 html {
   color: #222;
   font-weight: 100;
