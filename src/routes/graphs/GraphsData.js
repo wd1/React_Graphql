@@ -12,7 +12,7 @@ const Disclaimer = () => (
 
 const GraphsData = {
   scholars: {
-    title: 'Iranian American Scholars',
+    title: 'Scholars',
     description: 'Location, publications, citations and more',
     image: '/graphs-data/scholars/scholars.png',
     link: '/explore/scholars',
@@ -36,16 +36,54 @@ const GraphsData = {
     link: '/explore/physicians-california',
   },
   patents: {
-    title: 'Iranian-American Patent Holders',
+    title: 'Patent Holders',
     description: '',
     image: '/graphs-data/patents/patents.png',
     link: '/explore/patents',
   },
   linkedin: {
-    title: 'Iranian-Americans on LinkedIn',
+    title: 'LinkedIn',
     description: 'Location, Industry, Gender, ...',
     image: '/graphs-data/linkedin/linkedin.png',
     link: '/explore/linkedin',
+  },
+  healthcare: {
+    chiropractors: {
+      title: 'Chiropractors',
+      description: 'Location, Specialization, Gender',
+      image: '/graphs-data/healthcare/chiropractors.png',
+      link: '/explore/healthcare/chiropractors',
+    },
+    pharmacists: {
+      title: 'Pharmacists',
+      description: 'Location, Classification, Specialization, ...',
+      image: '/graphs-data/healthcare/pharmacists.png',
+      link: '/explore/healthcare/pharmacists',
+    },
+    dentists: {
+      title: 'Dentists',
+      description: 'Location, Specialization, Gender',
+      image: '/graphs-data/healthcare/dentists.png',
+      link: '/explore/healthcare/dentists',
+    },
+    physicians: {
+      title: 'Physicians',
+      description: 'Location, Classification, Specialization, ...',
+      image: '/graphs-data/healthcare/physicians.png',
+      link: '/explore/healthcare/physicians',
+    },
+    nurses: {
+      title: 'Nurses',
+      description: 'Location, Specialization, Gender',
+      image: '/graphs-data/healthcare/nurses.png',
+      link: '/explore/healthcare/nurses',
+    },
+    therapists: {
+      title: 'Therapists',
+      description: 'Location, Classification, Specialization, ...',
+      image: '/graphs-data/healthcare/therapists.png',
+      link: '/explore/healthcare/therapists',
+    },
   },
   future: {
     title: '',

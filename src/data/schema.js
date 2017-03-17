@@ -18,6 +18,7 @@ import meQuery from './queries/me';
 import content from './queries/content';
 import subscribeQuery from './queries/subscription';
 import adminQuery from './queries/admin';
+import donationQuery from './queries/donation';
 
 // Mutations
 import userMutation from './mutations/user';
@@ -32,6 +33,7 @@ const schema = new Schema({
       ...meQuery,
       ...subscribeQuery,
       ...adminQuery,
+      ...donationQuery,
       content,
     },
   }),

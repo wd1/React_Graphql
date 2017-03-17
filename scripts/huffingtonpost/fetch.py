@@ -7,6 +7,8 @@ from lxml import html
 import datetime
 from PIL import Image
 from os import path
+from io import BytesIO
+
 PATH = path.dirname(path.realpath(__file__))
 BASE_PATH = path.dirname(path.dirname(PATH))
 BLACK_LIST_FILE = path.join(PATH, 'blacklist.txt')
@@ -32,9 +34,7 @@ def fetch_link(url):
     if (len(tree.xpath('//img[@class="image__src"]/@src')) > 0):
         image = tree.xpath('//img[@class="image__src"]/@src')[0]
     else:
-        image = tree.xpath('//div[contains(@class, "entry__body")]/'
-                           'div[@id="photo-strip"]/following-sibling::div[1]'
-                           '//img/@src')[0]
+        image = tree.xpath('//div[contains(@class, "entry__body")]//img/@src')[0]
 
     image = image.replace('/scalefit_820_noupscale', '')
     image = image.replace('-thumb', '')
@@ -61,13 +61,14 @@ def get_image(item):
     print('Fetching image:', url)
     response = requests.get(url, stream=True)
     response.raw.decode_content = True  # to decode gzip if necessary
-    image = Image.open(response.raw)
+    image = BytesIO(response.raw.read())
+    image = Image.open(image)
 
     base_width = 330
     ratio = base_width / float(image.size[0])
     new_size = [int(i * ratio) for i in image.size]
 
-    image = image.resize(new_size, resample=Image.LANCZOS)
+    image = image.resize(new_size, resample=Image.ANTIALIAS)
     image_filename = url.split('/')[-1].split('.')[0] + '.jpg'
     image_full_filename = path.join(OUTPUT_PATH, image_filename)
     image.save(image_full_filename, 'JPEG')

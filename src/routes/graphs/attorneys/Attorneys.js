@@ -23,11 +23,11 @@ class Attorneys extends React.Component {
   render() {
     return (
       <Grid>
-        <h1>Iranian-American Attorneys in California</h1>
+        <h1>Iranian American Attorneys in California</h1>
         <p>
           There are around
           {' '}<span style={{ fontWeight: 'bold' }} id="count" /> (est.)
-          Iranian-American attorneys registered in the State BAR of California.
+          Iranian American attorneys registered in the State BAR of California.
         </p>
 
         <div id="tooltip-container" />

@@ -25,7 +25,7 @@ class Content extends React.Component {
       <Grid>
         <div className={s.root}>
           <div className={s.container}>
-            <h1>Iranian-American Professionals on LinkedIn</h1>
+            <h1>Iranian American Professionals on LinkedIn</h1>
             <p>
               These statistics are based on sample of
               {' '}<span style={{ fontWeight: 'bold' }} id="count" />

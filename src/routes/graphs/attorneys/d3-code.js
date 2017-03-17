@@ -94,7 +94,7 @@ var renderAdmissionYear = function(data) {
     type: "bar",
   }];
   var layout = {
-    title: 'Iranian-American Attorneys Admitted to CAlBAR / Year',
+    title: 'Iranian American Attorneys Admitted to CAlBAR / Year',
     yaxis: {
       title: 'Number of Attorneys',
     },
@@ -112,7 +112,7 @@ var renderAdmissionYear = function(data) {
     type: "scatter",
   }];
   var layoutPercentage = {
-    title: 'Percentage of Iranian-American Admitted / Year',
+    title: 'Percentage of Iranian American Admitted / Year',
     yaxis: {
       title: 'Percentage',
     },

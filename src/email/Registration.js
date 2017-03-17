@@ -6,7 +6,7 @@ function sendRegistrationEmail(recipient) {
 <h2>Welcome,</h2>
 
 <p>
-You're successfully registered in IACP (Iranian-Americans Contributions Project) website.
+You're successfully registered in IACP (Iranian Americans Contributions Project) website.
 <br /><br />
 Thank you,
 <br />

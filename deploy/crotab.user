@@ -1,1 +1,1 @@
-15 8 * * * python3 /vagrant/iacp_website/scripts/huffingtonpost/fetch.py >/dev/null 2>&1
+15 13 * * * python3 /vagrant/iacp_website/scripts/huffingtonpost/fetch.py >/dev/null 2>&1 && cd /vagrant/iacp_website/ && npm run build -- --release && pm2 restart IACP

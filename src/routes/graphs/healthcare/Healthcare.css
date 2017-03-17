@@ -22,7 +22,13 @@
     pointer-events: none;
   }
 
-  #mapText {
+  .mapText {
+    margin-top: -50px;
     float: right;
+  }
+
+  .mapText > h4 {
+    float: right;
+    clear: right;
   }
 }

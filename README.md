@@ -18,12 +18,19 @@ $ git clone git@bitbucket.org:constellatio_phoenix/website.git
 $ cd MyApp
 ```
 
-### 2. Run `npm install`
+### 2. Make your own `secrets.js` file
+This file contains personal secrets such as database URL needed to run the project. In order to make your own copy, follow these steps:
+1. Make a copy of '/src/secrets.sample.js' in the same path.
+2. Rename the new file to 'secrets.js'.
+3. Update the file content with your own secrets.
+    * __NOTE:__ For database URL, you can easily create a free PostgresSQL database on [elephantsql.com](https://www.elephantsql.com/) and update the file with the link to that one.
+
+### 3. Run `npm install`
 
 This will install both run-time project dependencies and developer tools listed
 in [package.json](../package.json) file.
 
-### 3. Run `npm start`
+### 4. Run `npm start`
 
 This command will build the app from the source files (`/src`) into the output
 `/build` folder. As soon as the initial build completes, it will start the

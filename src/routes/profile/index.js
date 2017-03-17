@@ -32,18 +32,37 @@ export default {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        query: '{me{email}}',
+        query: `{
+          myDonations {
+            donations {
+              amount
+              last4
+              exp_month
+              exp_year
+              status
+              announceAmount
+              announceName
+              updatedAt
+            }
+            errors {
+              key
+              message
+            }
+          }
+        }`,
       }),
       credentials: 'include',
     });
     const { data } = await resp.json();
 
     // redirect to '/' if no result is returned
-    if (!data || !data.me) return { redirect: '/' };
+    if (!data || !data.myDonations) return { redirect: '/' };
+
+    const donation = data.myDonations;
 
     return {
       title,
-      component: <Layout><Profile title={title} me={data.me} /></Layout>,
+      component: <Layout><Profile title={title} donation={donation} /></Layout>,
     };
   },
 

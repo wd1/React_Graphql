@@ -21,15 +21,15 @@ class Scholars extends React.Component {
   render() {
     return (
       <Grid>
-        <h1>Iranian-American Scholars</h1>
+        <h1>Iranian American Scholars</h1>
 
         {/* !-- Map -- */}
         <h2>By Location</h2>
         <div id="scholars-map" />
         <p>
-          The size of bubbles represent population of Iranian-Americans in each school.
+          The size of bubbles represent population of Iranian Americans in each school.
           <br />
-          The darkness of each bubble represents the percentage of Iranian-Americans in each school.
+          The darkness of each bubble represents the percentage of Iranian Americans in each school.
         </p>
 
         {/* !-- Citations -- */}

@@ -63,7 +63,7 @@ class Home extends React.Component {
   renderGraphGalary() {
     const graphs = [
       GraphsData.scholars, GraphsData.california,
-      GraphsData.attorneys, GraphsData.physiciansCalifornia,
+      GraphsData.attorneys, GraphsData.healthcare.physicians,
       GraphsData.patents, GraphsData.linkedin,
     ];
     return graphs.map((graph, index) => (

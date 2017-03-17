@@ -76,7 +76,10 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 /* app.get('/login/facebook',
- *   passport.authenticate('facebook', { scope: ['public_profile', 'email', 'user_location'], session: false }),
+ *   passport.authenticate('facebook',{
+       scope: ['public_profile', 'email', 'user_location'],
+       session: false,
+     }),
  * );
  * app.get('/login/facebook/return',
  *   passport.authenticate('facebook', { failureRedirect: '/login', session: false }),
@@ -115,7 +118,8 @@ app.get('*', async (req, res, next) => {
   try {
     let user;
     if (req.user) {
-      // we're in serverside, i'm not sure this is a good idea to fetch it from graphql or should be queriying directly
+      // we're in serverside, i'm not sure this is a good idea to fetch it from graphql or should
+      // be queriying directly
       const meResp = await fetch('/graphql', {
         method: 'post',
         headers: {

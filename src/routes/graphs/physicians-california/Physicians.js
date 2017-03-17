@@ -24,11 +24,11 @@ class Physicians extends React.Component {
   render() {
     return (
       <Grid>
-        <h1>Iranian-American Physicians in California</h1>
+        <h1>Iranian American Physicians in California</h1>
         <p>
           There are around
           {' '}<span style={{ fontWeight: 'bold' }} id="count" /> (est.)
-          Iranian-American physicians registered in California.
+          Iranian American physicians registered in California.
         </p>
 
         <Row>

@@ -3,6 +3,8 @@ import {
   GraphQLObjectType as ObjectType,
   GraphQLNonNull as NonNull,
   GraphQLString as StringType,
+  GraphQLInt as IntType,
+  GraphQLBoolean as BooleanType,
 } from 'graphql';
 
 import Stripe from 'stripe';
@@ -29,11 +31,21 @@ const donate = {
     email: { type: new NonNull(StringType) },
     fullName: { type: new NonNull(StringType) },
     zipCode: { type: new NonNull(StringType) },
-    amount: { type: new NonNull(StringType) },
+    amount: { type: new NonNull(IntType) },
+    announceAmount: { type: new NonNull(BooleanType) },
+    announceName: { type: new NonNull(BooleanType) },
   },
-  async resolve(root, { token, email, fullName, zipCode, amount }) {
+  async resolve(root, { token, email, fullName, zipCode, amount, announceAmount, announceName }) {
     try {
-      const donation = await Donation.create({ amount, token, email, fullName, zipCode });
+      const donation = await Donation.create({
+        amount,
+        token,
+        email,
+        fullName,
+        zipCode,
+        announceAmount,
+        announceName,
+      });
 
       const description = `One time donation from ${fullName} <${email}> to IA-CP Organization.`;
       const stripeAmount = parseInt(amount, 10) * 100;
@@ -51,13 +63,24 @@ const donate = {
 
       if (errors.length === 0) {
         try {
-          await stripe.charges.create({
+          const charge = await stripe.charges.create({
             amount: stripeAmount,
             currency: 'usd',
             source: token, // obtained with Stripe.js
             description,
           });
-          donation.status = DONATE_COMPLETED;
+          if (charge.paid) {
+            donation.status = DONATE_COMPLETED;
+          } else {
+            donation.status = DONATE_CANCELED;
+          }
+          if (charge.source) {
+            donation.exp_month = charge.source.exp_month;
+            donation.exp_year = charge.source.exp_year;
+            donation.last4 = charge.source.last4;
+            donation.country = charge.source.country;
+            donation.brand = charge.source.brand;
+          }
           await donation.save();
         } catch (e) {
           errors.push({ key: 'stripe', message: e.message });

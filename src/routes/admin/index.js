@@ -48,7 +48,14 @@ export default {
               email
               fullName
               zipCode
+              last4
+              exp_month
+              exp_year
+              brand
+              country
               status
+              announceAmount
+              announceName
               updatedAt
             }
             errors {

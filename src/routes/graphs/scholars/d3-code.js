@@ -37,7 +37,7 @@ var renderMap = function(data) {
 
         color: data.map(function(o){return Math.min(o.percentage, 5)}),
         colorbar: {
-          title: 'Percentage of Iranian-<br>American Scholars'
+          title: 'Percentage of Iranian <br>American Scholars'
         },
     }
   }];

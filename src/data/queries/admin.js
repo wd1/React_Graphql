@@ -4,11 +4,10 @@ import {
   GraphQLObjectType as ObjectType,
   GraphQLString as StringType,
   GraphQLBoolean as BooleanType,
-  GraphQLInt as IntType,
 } from 'graphql';
-import GraphQLDate from 'graphql-date';
 import { User, Subscription, Donation } from '../models';
 import ErrorType from '../types/ErrorType';
+import DonationType from '../types/DonationType';
 
 const admin = {
   type: new ObjectType({
@@ -24,17 +23,7 @@ const admin = {
         })),
       },
       donations: {
-        type: new List(new ObjectType({
-          name: 'donations',
-          fields: {
-            amount: { type: IntType },
-            email: { type: StringType },
-            fullName: { type: StringType },
-            zipCode: { type: StringType },
-            status: { type: StringType },
-            updatedAt: { type: GraphQLDate },
-          },
-        })),
+        type: DonationType,
       },
       errors: {
         type: ErrorType,
@@ -66,8 +55,7 @@ const admin = {
         });
       }
 
-      const donations = await Donation.findAll({ attributes: ['amount', 'email', 'fullName', 'zipCode', 'status', 'updatedAt'], limit: 100, order: '"updatedAt" DESC' });
-      /* const donations = Donation.findAll();*/
+      const donations = await Donation.findAll({ order: '"updatedAt" DESC' });
       if (donations && donations.length === 0) {
         errors.push({
           key: 'donations',

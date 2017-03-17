@@ -1,0 +1,8 @@
+:global {
+  @import '../../../node_modules/react-bootstrap-toggle/dist/bootstrap2-toggle.css';
+}
+
+.toggleContainer {
+  float: right;
+  margin-right: 50px;
+}

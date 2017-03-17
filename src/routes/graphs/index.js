@@ -21,7 +21,7 @@ export default {
     require('./scholars').default,
     require('./attorneys').default,
     require('./physicians-california').default,
-    require('./physicians').default,
+    require('./healthcare').default,
     require('./patents').default,
     require('./linkedin').default,
   ],

@@ -41,6 +41,8 @@ export function donate(amount) {
     const email = contact.email.value;
     const fullName = contact.fullName.value;
     const zipCode = contact.zipCode.value;
+    const announceName = contact.announceName;
+    const announceAmount = contact.announceAmount;
 
     try {
       const { data } = await graphqlRequest(`
@@ -49,7 +51,10 @@ export function donate(amount) {
                  email: "${email}",
                  fullName: "${fullName}"
                  zipCode: "${zipCode}"
-                 amount: "${amount}") {
+                 amount: ${amount}
+                 announceName: ${announceName}
+                 announceAmount: ${announceAmount}
+          ) {
             errors { key, message }
           }
         }

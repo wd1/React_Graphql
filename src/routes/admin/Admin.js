@@ -11,14 +11,14 @@ import React, { PropTypes } from 'react';
 import { Grid,
          Tabs,
          Tab,
-         Table,
-         Glyphicon } from 'react-bootstrap';
+         Table } from 'react-bootstrap';
 import Moment from 'moment';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import Alerts from '../../components/Alerts';
 import Loading from '../../components/Loading';
 import s from './Admin.css';
 import { DONATE_COMPLETED } from '../../constants/donate';
+import NullableBool from '../../components/Misc/NullableBool';
 
 class Admin extends React.Component {
   static propTypes = {
@@ -62,15 +62,7 @@ class Admin extends React.Component {
                     <tr key={index}>
                       <td>{index + 1}</td>
                       <td>{entry.email}</td>
-                      <td>
-                        {
-                          entry.active
-                          ?
-                            <div><Glyphicon glyph="ok" style={{ color: 'green' }} /></div>
-                          :
-                            <div><Glyphicon glyph="remove" style={{ color: 'red' }} /></div>
-                        }
-                      </td>
+                      <td><NullableBool value={entry.active} /></td>
                     </tr>
                   ))
                 }
@@ -86,7 +78,13 @@ class Admin extends React.Component {
                   <th>Email Address</th>
                   <th>Full Name</th>
                   <th>Zip Code</th>
+                  <th>Last 4 Digits</th>
+                  <th>Expire Date</th>
+                  <th>Brand</th>
+                  <th>Country</th>
                   <th>Status</th>
+                  <th>Ann. Amount</th>
+                  <th>Ann. Name</th>
                   <th>Timestamp</th>
                 </tr>
               </thead>
@@ -99,15 +97,13 @@ class Admin extends React.Component {
                     <td>{entry.email}</td>
                     <td>{entry.fullName}</td>
                     <td>{entry.zipCode}</td>
-                    <td>
-                      {
-                        (entry.status === DONATE_COMPLETED)
-                        ?
-                          <div><Glyphicon glyph="ok" style={{ color: 'green' }} /></div>
-                        :
-                          <div><Glyphicon glyph="remove" style={{ color: 'red' }} /></div>
-                      }
-                    </td>
+                    <td>{entry.last4}</td>
+                    <td>{entry.exp_month}/{entry.exp_year}</td>
+                    <td>{entry.brand}</td>
+                    <td>{entry.country}</td>
+                    <td><NullableBool value={entry.status === DONATE_COMPLETED} /></td>
+                    <td><NullableBool value={entry.announceAmount} /></td>
+                    <td><NullableBool value={entry.announceName} /></td>
                     <td>{Moment(entry.updatedAt).fromNow()}</td>
                   </tr>
                   ))

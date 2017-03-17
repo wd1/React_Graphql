@@ -8,6 +8,7 @@ import {
   Well,
   Collapse,
 } from 'react-bootstrap';
+import Toggle from 'react-bootstrap-toggle';
 import validator from 'validator';
 import { connect } from 'react-redux';
 import { donate, createToken } from '../../actions/donate';
@@ -48,6 +49,8 @@ class Donate extends React.Component {
         email: { validation: null },
         fullName: { validation: null },
         zipCode: { validation: null },
+        announceAmount: true,
+        announceName: true,
       },
     };
   }
@@ -109,6 +112,24 @@ class Donate extends React.Component {
 
   updateAmount = (amount) => {
     this.setState({ amount });
+  }
+
+  updateAmountAttr = (announceAmount) => {
+    this.setState({
+      contact: {
+        ...this.state.contact,
+        announceAmount,
+      },
+    });
+  }
+
+  updateNameAttr = (announceName) => {
+    this.setState({
+      contact: {
+        ...this.state.contact,
+        announceName,
+      },
+    });
   }
 
   updateContact = (event) => {
@@ -222,6 +243,41 @@ class Donate extends React.Component {
           <Col sm={6}>
 
             <div className="page-header">
+              <h3> Announcement </h3>
+              <p>
+                We need your permission in order to announce your donation in our donation list:
+              </p>
+
+              <div style={{ marginBottom: 20 }}>
+                Would you like us to announce your name?
+                <div className={s.toggleContainer}>
+                  <Toggle
+                    onClick={this.updateNameAttr}
+                    on="Yes"
+                    off="No"
+                    size="sm"
+                    offstyle="danger"
+                    active={this.state.contact.announceName}
+                  />
+                </div>
+              </div>
+
+              <div>
+                Would you like us to announce the amount too?
+                <div className={s.toggleContainer}>
+                  <Toggle
+                    onClick={this.updateAmountAttr}
+                    on="Yes"
+                    off="No"
+                    size="sm"
+                    offstyle="danger"
+                    active={this.state.contact.announceAmount}
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="page-header">
               <h3> Payment </h3>
               <Well bsSize="small">
                 <CreditCard updateCreditData={this.updateCreditData} />
@@ -245,7 +301,9 @@ class Donate extends React.Component {
             {/* #TODO move Collapse to Alerts Component */}
             <Collapse in={errors.length > 0} style={{ paddingTop: 10 }}>
               <div>
-                <p>The following error(s) happened while we were trying to process your donation:</p>
+                <p>
+                  The following error(s) happened while we were trying to process your donation:
+                </p>
                 <Alerts errors={errors} />
               </div>
             </Collapse>

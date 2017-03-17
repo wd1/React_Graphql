@@ -361,7 +361,7 @@ var DrawGraph = function() {
         .toPrecision(3);
       const iaPercentage = (100 * d.ia / d.total)
         .toPrecision(3);
-      const breadcrumbsString = `${iaPercentage}% are Iranian-American`;
+      const breadcrumbsString = `${iaPercentage}% are Iranian American`;
 
       d3.select('#center-name')
         .text(unslugifyFileds(d.name));

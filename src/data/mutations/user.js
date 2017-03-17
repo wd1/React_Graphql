@@ -113,6 +113,10 @@ const forgot = {
       errors.push({ key: 'email', message: 'There\'s no user with such email exists' });
     }
 
+    if (user && user.admin) {
+      errors.push({ key: 'email', message: 'You\'re not Allowed to do this action.' });
+    }
+
     if (errors.length === 0) {
       resetPasswordToken = User.generateResetPasswordToken();
       user.resetPasswordToken = resetPasswordToken;
@@ -156,10 +160,16 @@ const reset = {
     }
 
     // check to see if there's already a user with that email
-    const user = await User.findOne({ where: { $and: { resetPasswordToken, resetPasswordExpires: { $gt: Date.now() } } } });
+    const user = await User.findOne({
+      where: { $and: { resetPasswordToken, resetPasswordExpires: { $gt: Date.now() } } },
+    });
 
     if (!user) {
       errors.push({ key: 'email', message: 'Password reset token is invalid or has expired.' });
+    }
+
+    if (user && user.admin) {
+      errors.push({ key: 'email', message: 'You\'re not Allowed to do this action.' });
     }
 
     if (errors.length === 0) {

@@ -23,11 +23,11 @@ class Patents extends React.Component {
   render() {
     return (
       <Grid>
-        <h1>Iranian-American Patent Holders</h1>
+        <h1>Iranian American Patent Holders</h1>
         <p>
           There are around
           {' '}<span style={{ fontWeight: 'bold' }} id="count" />{' '}
-          patents with at least one Iranian-American contributer.
+          patents with at least one Iranian American contributer.
         </p>
 
         {/* !-- Map -- */}

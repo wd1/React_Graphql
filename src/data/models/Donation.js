@@ -51,9 +51,44 @@ const Donation = Model.define('Donation', {
     allowNull: false,
   },
 
+  last4: {
+    type: DataType.INTEGER,
+    allowNull: true,
+  },
+
+  exp_month: {
+    type: DataType.INTEGER,
+    allowNull: true,
+  },
+
+  exp_year: {
+    type: DataType.INTEGER,
+    allowNull: true,
+  },
+
+  brand: {
+    type: DataType.STRING(120),
+    allowNull: true,
+  },
+
+  country: {
+    type: DataType.STRING(120),
+    allowNull: true,
+  },
+
   status: {
     type: DataType.ENUM(DONATE_NEW, DONATE_CANCELED, DONATE_COMPLETED),
     defaultValue: DONATE_NEW,
+  },
+
+  announceAmount: {
+    type: DataType.BOOLEAN,
+    defaultValue: false,
+  },
+
+  announceName: {
+    type: DataType.BOOLEAN,
+    defaultValue: false,
   },
 
 }, {
