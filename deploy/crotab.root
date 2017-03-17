@@ -1,3 +1,0 @@
-0 */8 * * * service uwsgi restart
-5 */8 * * * /usr/bin/certbot-auto renew >> /var/log/le-renew.log
-10 */8 * * * service nginx restart

@@ -34,13 +34,6 @@ const myDonations = {
         order: '"updatedAt" DESC',
       });
 
-      if (donations && donations.length === 0) {
-        errors.push({
-          key: 'donations',
-          message: 'There\'s no donation on database yet',
-        });
-      }
-
       return { donations, errors };
     } catch (e) {
       errors.push({

@@ -1,0 +1,3 @@
+10 */8 * * * root bash service nginx restart
+5 */8 * * * root bash /usr/bin/certbot-auto renew >> /var/log/le-renew.log
+15 13 * * * USERNAME bash python3 /vagrant/iacp_website/scripts/huffingtonpost/fetch.py >/dev/null 2>&1 && cd /vagrant/iacp_website/ && npm run build -- --release && pm2 restart IACP
