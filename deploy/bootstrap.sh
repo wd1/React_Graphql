@@ -1,11 +1,12 @@
-DEPLOY_DIR="$(dirname "${BASH_SOURCE[0]}")"
+FULL_PATH=`realpath ${BASH_SOURCE[0]}`
+DEPLOY_DIR="$(dirname "$FULL_PATH")"
 ROOT_DIR="$(dirname "$DEPLOY_DIR")"
 SRC_DIR="$ROOT_DIR/src"
 
 # install packages
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs python3-pip python-imaging nginx letsencrypt
-sudo pip3 install -r requirements.txt
+sudo pip3 install -r $DEPLOY_DIR/requirements.txt
 sudo npm install pm2 -g
 
 # npm install with limited memory
@@ -14,6 +15,7 @@ node --max_semi_space_size=1 --max_old_space_size=650 --max_executable_size=150 
 # cp secrets
 cp "$SRC_DIR/secrets.sample.js" "$SRC_DIR/secrets.js"
 nano "$SRC_DIR/secrets.js"
+nano "$SRC_DIR/config.js"
 
 # build and install project
 node --max_semi_space_size=1 --max_old_space_size=650 --max_executable_size=150 /usr/bin/npm run build -- --release
