@@ -16,14 +16,14 @@ cp "$SRC_DIR/secrets.sample.js" "$SRC_DIR/secrets.js"
 nano "$SRC_DIR/secrets.js"
 
 # build and install project
-npm run build -- --release
+node --max_semi_space_size=1 --max_old_space_size=650 --max_executable_size=150 /usr/bin/npm run build -- --release
 pm2 start "$DEPLOY_DIR/ecosystem.config.js"
 sudo ln -s "$DEPLOY_DIR/nginx.conf" "/etc/nginx/sites-enabled/ia-cp.org"
 
 # install cronjobs
 cronjobs=`cat "$DEPLOY_DIR/cronjobs"`
 cronjobs=${cronjobs/USERNAME/$USER}
-echo "$cronjobs" > /etc/cron.d/ia-cp.org
+echo "$cronjobs" | sudo tee "/etc/cron.d/iacp" > /dev/null
 
 # SSL certificates
 sudo letsencrypt certonly --webroot -w $DEPLOY_DIR -d ia-cp.org
