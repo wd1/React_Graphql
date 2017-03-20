@@ -5,4 +5,4 @@
 5 */8 * * * root /usr/bin/certbot-auto renew >> /var/log/le-renew.log
 
 # fetch Huffington Post articles everyday
-15 13 * * * USERNAME python3 /vagrant/iacp_website/scripts/huffingtonpost/fetch.py >/dev/null 2>&1 && cd /vagrant/iacp_website/ && npm run build -- --release && pm2 restart IACP
+15 13 * * * USERNAME /vagrant/iacp_website/scripts/huffingtonpost/main.sh >/dev/null 2>&1
