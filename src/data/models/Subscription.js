@@ -29,6 +29,12 @@ const Subscription = Model.define('Subscription', {
     defaultValue: DataType.UUIDV1,
     unique: true,
   },
+
+  norooz96: {
+    type: DataType.BOOLEAN,
+    defaultValue: false,
+  },
+
 }, {
 
   getterMethods: {

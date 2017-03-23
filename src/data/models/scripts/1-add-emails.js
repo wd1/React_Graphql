@@ -2,7 +2,7 @@
 // We have to add better structure for our migrations
 
 import Subscription from '../Subscription';
-
+import emailsList from './emailsList';
 
 async function addEmails(emails) {
   for (let email of emails) {
@@ -10,9 +10,8 @@ async function addEmails(emails) {
   }
 }
 
-const emails = [
-  'hamed.ty@gmail.com',
-];
+const emails = emailsList;
+
 
 addEmails(emails).then(() => {
   console.log('Done!');

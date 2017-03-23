@@ -5,17 +5,22 @@ import logger from '../core/logger.js';
 import { AWSKey } from '../secrets';
 import { BCC_EMAIL } from '../config';
 
-function sendEmail(recipient, subject, html) {
-  const transporter = nodemailer.createTransport(ses(AWSKey));
+export const EMAIL_BASE = {
+  from: 'IACP - Iranian Americans\' Contributions Project <noreply@ia-cp.org>',
+  replyTo: 'IACP - Iranian Americans\' Contributions Project <info@ia-cp.org>',
+  bcc: BCC_EMAIL,
+  text: `Note: This email is sent using HTML format. If you are seeing
+this message it means your email client/application is too old to support
+HTML emails. Please use more up-to-dated email client to see this message.`,
+};
+
+export const createTransport = () => nodemailer.createTransport(ses(AWSKey));
+
+const sendEmail = (recipient, subject, html) => {
+  const transporter = createTransport();
 
   transporter.sendMail({
-    from: 'IACP - Iranian Americans\' Contributions Project <noreply@ia-cp.org>',
-    replyTo: 'IACP - Iranian Americans\' Contributions Project <info@ia-cp.org>',
-    bcc: BCC_EMAIL,
-    text: `Note: This email is sent using HTML format. If you are seeing
- this message it means your email client/application is too old to support
- HTML emails. Please use more up-to-dated email client to see this message.`,
-
+    ...EMAIL_BASE,
     to: recipient,
     subject,
     html,
@@ -27,6 +32,6 @@ function sendEmail(recipient, subject, html) {
     }
     transporter.close();
   });
-}
+};
 
 export default sendEmail;
