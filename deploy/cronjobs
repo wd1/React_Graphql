@@ -5,4 +5,4 @@
 5 */8 * * * root /usr/bin/certbot-auto renew >> /var/log/le-renew.log
 
 # fetch Huffington Post articles everyday
-15 13 * * * USERNAME /vagrant/iacp_website/scripts/huffingtonpost/main.sh >/dev/null 2>&1
+15 13 * * * USERNAME /vagrant/iacp_website/scripts/huffingtonpost/main.sh > /vagrant/iacp_website/logs/huffington_post.log 2>&1

@@ -1,3 +1,4 @@
+#!/bin/bash
 FULL_PATH=`realpath ${BASH_SOURCE[0]}`
 HUFFINGTON_DIR="$(dirname "$FULL_PATH")"
 SCRIPTS_DIR="$(dirname "$HUFFINGTON_DIR")"
