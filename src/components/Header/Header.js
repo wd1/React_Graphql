@@ -41,7 +41,7 @@ class Header extends React.Component {
             <NavItem eventKey={1} href="/">Home</NavItem>
             <NavItem eventKey={2} href="/stories">Contribution Stories</NavItem>
             <NavItem eventKey={3} href="/explore">Explore Data</NavItem>
-            {/* <NavItem eventKey={4} href="/about">About</NavItem> */}
+            <NavItem eventKey={4} href="/aboutus">About Us</NavItem>
           </Nav>
           <hr className={s.divider} />
           <Nav pullRight>
