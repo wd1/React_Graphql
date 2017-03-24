@@ -13,7 +13,7 @@ import {
   Row,
   Col,
 } from 'react-bootstrap';
-// import queryString from 'query-string';
+import queryString from 'query-string';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Home.css';
 import VideoSlide from '../../components/VideoSlide';
@@ -30,12 +30,12 @@ class Home extends React.Component {
     this.stories = storiesData.slice(0, 4);
   }
 
-  /* getFbEmbedParams() {
+  getFbEmbedParams() {
     const height = 792;
     const urlBase = 'https://www.facebook.com/plugins/page.php?';
     const urlParams = {
       height,
-      href: 'https://www.facebook.com/iawfoundation',
+      href: 'https://www.facebook.com/IranianAmericansContributionsProject',
       tabs: 'timeline',
       small_header: false,
       adapt_container_width: true,
@@ -58,23 +58,22 @@ class Home extends React.Component {
       allowTransparency: true,
     };
     return params;
-  } */
+  }
 
   renderGraphGalary() {
     const graphs = [
       GraphsData.scholars, GraphsData.california,
-      GraphsData.attorneys, GraphsData.healthcare.physicians,
-      GraphsData.patents, GraphsData.linkedin,
+      GraphsData.healthcare.physicians, GraphsData.linkedin,
     ];
     return graphs.map((graph, index) => (
-      <Col xs={6} sm={6} md={4} key={index}>
+      <Col xs={6} key={index}>
         <GraphThumbnail data={graph} height={386} />
       </Col>
     ));
   }
 
   render() {
-    // const fbEmbedParams = this.getFbEmbedParams();
+    const fbEmbedParams = this.getFbEmbedParams();
 
     return (
       <Grid>
@@ -98,13 +97,24 @@ class Home extends React.Component {
         <hr />
 
         <Row>
-          {/* Database */}
-          <h2>
-            <strong>IACP Database:</strong>
-            {' '}<small>[<a href="/explore">Complete List</a>]</small>
-          </h2>
+          <Col md={8}>
+            {/* Database */}
+            <h2>
+              <strong>IACP Database:</strong>
+              {' '}<small>[<a href="/explore">Complete List</a>]</small>
+            </h2>
 
-          {this.renderGraphGalary()}
+            {this.renderGraphGalary()}
+          </Col>
+
+          <Col md={4}>
+            <h2>
+              <strong>Social Media:</strong>
+            </h2>
+            <div style={{ width: '100%' }}>
+              <iframe {...fbEmbedParams} />
+            </div>
+          </Col>
         </Row>
 
         <hr />
