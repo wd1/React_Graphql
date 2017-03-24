@@ -1,6 +1,8 @@
 import Subscription from '../Subscription';
 import { createTransport, EMAIL_BASE } from '../../../email/Email';
 
+let MUTEX = 0;
+
 const sendSingleEmail = (subscriptionInstance, transporter) => {
   const recipient = subscriptionInstance.email;
   const subject = 'Happy Norooz from IACP - Iranian Americans\' Contributions Project';
@@ -58,19 +60,29 @@ IACP - PO Box 520, Los Altos, Ca., 94023
     if (error) {
       console.error('AWS SES failed', { error });
     } else {
-      subscriptionInstance.norooz96 = true;
-      subscriptionInstance.save();
+      subscriptionInstance.update({ norooz96: true });
       console.info('AWS SES message sent.', { recipient, message: response.message });
     }
+    MUTEX -= 1;
   });
 };
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 async function sendEmails() {
   const transporter = createTransport();
-  //const subscriptions = await Subscription.findAll({ where: { active: true, norooz96: false } });
-  //const subscriptions = await Subscription.findAll({ where: { email: 'pirooz_parvarandeh@yahoo.com' } });
-  subscriptions.forEach((subscription) => sendSingleEmail(subscription, transporter));
+  const subscriptions = await Subscription.findAll({ where: {
+    active: true,
+    norooz96: false,
+    // email: 'pirooz_parvarandeh@yahoo.com'
+  } });
+  for (let subscription of subscriptions) {
+    MUTEX += 1;
+    sendSingleEmail(subscription, transporter);
+    while (MUTEX) { await sleep(2000); }
+  }
 }
 
 sendEmails().then(() => {
