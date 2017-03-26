@@ -8,7 +8,7 @@ async function removeEmails(emails) {
   for (let email of emails) {
     const rowDeleted = await Subscription.destroy({
       where: {
-        email,
+        email: { $iLike: email },
       },
     });
     if (rowDeleted !== 1) {
