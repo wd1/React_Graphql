@@ -195,4 +195,6 @@ ncp-debug.log
 # Secrets
 src/secrets.js
 
+# Unnecessary Data
 src/public/stories-gallery
+*.mbox
