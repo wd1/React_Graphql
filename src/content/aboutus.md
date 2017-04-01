@@ -14,16 +14,16 @@ Even though we are using publicly available information, we are extremely respec
 
 ### Collaborations and Partnerships
 The anonymous data on our website is available to all. We wish to empower all organizations especially research and academic institutions to use this data for their purposes such as:
-Undertaking academically rigorous and quotable studies on the history and impact of the Iranian-American community, and reflecting this in reports and books
-Writing white-papers and generating narratives about the Iranian American community.
-Furthering their studies on the impact of diaspora communities.
+* Undertaking academically rigorous and quotable studies on the history and impact of the Iranian-American community, and reflecting this in reports and books
+* Writing white-papers and generating narratives about the Iranian American community.
+* Furthering their studies on the impact of diaspora communities.
 
 We welcome collaboration with other organizations who can provide content or data that is consistent with IACP’s mission.
 
 ### A Community Effort
 We would like our community members to participate in adding content to our website:
-We will enable a feature for Iranian Americans to post written content about their impact on America, and to share their life stories.
-We will enable a feature for the posting of various forms of multi-media content whose subject is consistent with our mission.
+* We will enable a feature for Iranian Americans to post written content about their impact on America, and to share their life stories.
+* We will enable a feature for the posting of various forms of multi-media content whose subject is consistent with our mission.
 
 We welcome collaboration with other organizations who can provide content or data that is consistent with IACP’s mission.
  
